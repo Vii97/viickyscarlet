@@ -112,7 +112,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="max-w-4xl"
           >
-            <h1 className="text-7xl md:text-[12rem] text-white uppercase tracking-tighter leading-[0.9]">
+            <h1 className="text-7xl md:text-[12rem] pb-5 md:p-0 text-white uppercase tracking-tighter leading-[0.9]">
               VIICKY SCARLET
             </h1>
           </motion.div>

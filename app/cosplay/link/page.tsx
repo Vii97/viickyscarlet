@@ -130,13 +130,13 @@ export default function Link() {
               ))}
             </ul>
             <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/X7mliLyz6Io?si=eanj6phqolwdu3Jb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X7mliLyz6Io?si=eanj6phqolwdu3Jb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2VtJ-qtVCo?si=rJlBsHBhTdEEKHi9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z2VtJ-qtVCo?si=rJlBsHBhTdEEKHi9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
              <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/2csIpObwI-s?si=jlpIzlnZ9MPFCWye" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2csIpObwI-s?si=jlpIzlnZ9MPFCWye" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             </FadeInSection>
               

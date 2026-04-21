@@ -131,7 +131,7 @@ export default function Eru() {
               ))}
             </ul>
             <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/tafSxYGXsto?si=_shMdxcHH_DkXz9T" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tafSxYGXsto?si=_shMdxcHH_DkXz9T" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             </FadeInSection>
               

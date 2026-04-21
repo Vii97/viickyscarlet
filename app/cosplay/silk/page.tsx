@@ -1,6 +1,5 @@
 import FadeInSection from "@/app/components/FadeInSection"
-import { MasonryGrid } from "@/app/components/MasonryGrid"
-import { AnimatedCard } from "@/app/components/AnimatedCard"
+
 import { ArtGallery } from "@/app/components/ArtGallery"
 
 export const cosplaySilk = [
@@ -66,7 +65,7 @@ export default function Silk() {
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
         <div className="container mx-auto px-4">
           <FadeInSection>
-          <h1 className="title text-center text-balance text-6xl leading-none tracking-tighter md:text-8xl">
+          <h1 className="title text-center text-balance text-6xl leading-none  md:text-8xl">
             {texts.title}
           </h1>
           <p className="subtitle text-center mb-8 text-lg">
@@ -102,7 +101,7 @@ export default function Silk() {
               ))}
             </ul>
             <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/VUw0vQABF1k?si=LH5ke60l_SUWaifY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VUw0vQABF1k?si=LH5ke60l_SUWaifY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             </FadeInSection>
               
