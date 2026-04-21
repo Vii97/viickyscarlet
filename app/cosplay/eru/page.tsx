@@ -1,0 +1,145 @@
+import FadeInSection from "@/app/components/FadeInSection";
+import { ArtGallery } from "@/app/components/ArtGallery";
+
+export const cosplayEru = [
+    {
+        id: 1,
+        src: "https://pbs.twimg.com/media/G-j4Pm5WEAEnLb1?format=jpg&name=4096x4096",
+        alt: "kameko",
+
+    },
+    {
+        id: 2,
+        src: "https://pbs.twimg.com/media/HEM1H8yWYAA1pu7?format=jpg&name=4096x4096",
+        alt: "kameko",
+    },   
+    {
+        id: 3,
+        src: "https://pbs.twimg.com/media/HFeC3s6WcAAJoyl?format=jpg&name=4096x4096",
+        alt: "kameko",
+    },   
+    {
+        id: 4,
+        src: "https://pbs.twimg.com/media/HFeDCR4XQAAKy70?format=jpg&name=4096x4096",
+        alt: "kameko",
+    },   
+    {
+        id: 5,
+        src: "https://pbs.twimg.com/media/G3t9MWwWEAA6ZsV?format=jpg&name=4096x4096",   
+        alt: "irenekuroi",
+    },
+    {
+        id: 6,
+        src: "https://pbs.twimg.com/media/G3PbWXsXwAAe5_d?format=jpg&name=4096x4096",   
+        alt: "irenekuroi",
+    },
+        {
+        id: 7,
+        src: "https://pbs.twimg.com/media/G4_oljdXYAAH9M1?format=jpg&name=4096x4096",   
+        alt: "irenekuroi",
+    },
+    {
+        id: 8,
+        src: "https://pbs.twimg.com/media/G5o365UWYAAmse0?format=jpg&name=4096x4096",   
+        alt: "irenekuroi",
+    },
+    {
+        id: 9,
+        src: "https://pbs.twimg.com/media/G42r1roXEAARUHg?format=jpg&name=4096x4096",   
+        alt: "irenekuroi",
+    },    
+    {
+        id: 10,
+        src: "https://pbs.twimg.com/media/Gy9z1VtXcAAsOig?format=jpg&name=large",   
+        alt: "irenekuroi",
+    }, 
+    {
+        id: 11,
+        src: "https://pbs.twimg.com/media/GmQF9dhW4AAnnCn?format=jpg&name=4096x4096",   
+        alt: "irenekuroi",
+    },
+    {
+        id: 12,
+        src: "https://pbs.twimg.com/media/Gof_kngXwAAs5ub?format=jpg&name=large",   
+        alt: "irenekuroi",
+    },
+    {
+        id: 13,
+        src: "https://pbs.twimg.com/media/GoqXSq4W0AE_T8F?format=jpg&name=large",   
+        alt: "irenekuroi",
+    },
+]
+
+export const texts = {
+    title: "Archer",
+    subtitle: "Black Desert",
+    quote: "Aquellos que amenazan el árbol sagrado no podrán esquivar mis flechas",
+    credits: "Irene Kuroi - Kameko",
+    title2: "El hijo perdido de Sylva, protector de la tierra",
+    whoIs: "El montaraz (Archer en inglés) es una clase en Black Desert, un videojuego MMORPG coreano que destaca por su combate a distancia y su movilidad. Su lore oficial en BDO es que son “luthragon”, los elfos hijos de la diosa Sylvia provenientes de Adùir, la fortaleza de las Raíces del Kamarbor, el árbol sagrado, donde luchan como guardianes de la tierra contra la oscuridad que amenaza constantemente la tierra de los elfos y del mundo entero.",
+    officialSite: "https://www.naeu.playblackdesert.com/es-ES/GameInfo/Class?classType=29",
+    storyTime: "Este cosplay es un homenaje a mi personaje en Black Desert, EruScarlet, donde no solo lo maineo jugándolo sino que también lo roleo, lo dibujo y literalmente es como mi modelo para expresar mi creatividad y tiene su propia historia, la cual me encanta desarrollar con relatos, dibujos y roles. Muchas veces me han preguntado cuál es mi cosplay favorito y realmente es siempre muy difícil decantarse con uno porque todos tienen mucho esfuerzo y cariño detrás; pero quizá si tuviera uno, sería este. Fue en el que más trabajé durante meses, es de los más nuevos y completos a nivel técnico, y es con el que volví a los escenarios después de un tiempo donde el mundillo del cosplay ya no lo sentía como antes. Llevarlo me llena de esa tan especial con la que vivo el cosplay con tanta pasión ♥", 
+    events: ["Japan Weekend Madrid 2025", "BDO Monthly April 2025","Mención de honor en Madrid Otaku 2025", "VOA Europe 2026 Sevilla invitee"],
+    }
+
+
+
+export default function Eru() {
+  return (
+    <div className="min-h-screen">
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
+        <div className="container mx-auto px-4">
+          <FadeInSection>
+          <h1 className="title text-center text-balance text-6xl leading-none  md:text-8xl">
+            {texts.title}
+          </h1>
+          <p className="subtitle text-center mb-8 text-lg">
+            {texts.subtitle}
+          </p>
+          <p className="text-white/70 text-center mb-12 text-lg"><i>{texts.quote}</i></p>
+          </FadeInSection>
+
+          <FadeInSection>
+              <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
+          </FadeInSection>
+          
+          <ArtGallery imageSets={[cosplayEru]} />
+
+          <p className="text-center mt-8 text-sm text-gray-500">
+            {texts.credits}
+          </p>
+
+          <FadeInSection>
+          <div className="mt-20 text-center">
+              <div className="mx-5 md:mx-16 py-8 border-t border-white/10" />
+            <h2 className="subtitle text-3xl mb-4">{texts.title2}</h2>
+            <p className="text-white text-balance mb-6">{texts.whoIs}</p>
+            <a href={texts.officialSite} target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
+              Sitio oficial de Black Desert
+            </a>
+          </div>
+          </FadeInSection>
+          
+          <div className="mt-12 text-center">
+            <FadeInSection>
+            <div className="bg-[#9D50BB]/30 p-4 md:p-6"><p className="border border-white/50 p-6 md:p-8 text-white">{texts.storyTime}</p></div>
+            </FadeInSection>
+            <FadeInSection>
+            <ul className="title mb-6 list-style-none text-white text-lg py-5">
+              {texts.events.map((event, index) => (
+                <li className="mb-2" key={index}>{event}</li>
+              ))}
+            </ul>
+            <div className="flex justify-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/tafSxYGXsto?si=_shMdxcHH_DkXz9T" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </div>
+            </FadeInSection>
+              
+          </div>
+          
+
+        </div>
+      </section>
+    </div>
+  );
+}
