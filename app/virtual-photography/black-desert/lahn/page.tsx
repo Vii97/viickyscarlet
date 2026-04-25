@@ -1,3 +1,5 @@
+"use client";
+
 import FadeInSection from "@/app/components/FadeInSection";
 import { ArtGallery } from "@/app/components/ArtGallery";
 import Image from "next/image";
