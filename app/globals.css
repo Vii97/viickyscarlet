@@ -27,8 +27,16 @@ body {
   }
 }
 
-@layer components {
-  .animate-fade-in {
-    animation: fadeIn 0.6s ease-in-out;
-  }
+/* Scrollbar */
+
+.modal-scrollbar:hover {
+ scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0);
+}
+
+/* Firefox */
+.modal-scrollbar {
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+  transition: scrollbar-color 0.3s ease;
+  box-shadow: 0 0 50px rgba(157, 80, 187, 0.3);
 }

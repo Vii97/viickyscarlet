@@ -159,7 +159,7 @@ import { ArtGallery } from "@/app/components/ArtGallery";
     },
     {
         id: 27,
-        src: "https://s1.pearlcdn.com/NAEU/Upload/Community/7fae01d93e120240817011035885.png",
+        src: "https://s1.pearlcdn.com/NAEU/Upload/Community/85997e9b0d120240817012714503.png",
         alt: "Scholar",
         title: "Scholar",
     },
@@ -177,18 +177,12 @@ import { ArtGallery } from "@/app/components/ArtGallery";
     },
     {
         id: 30,
-        src: "https://s1.pearlcdn.com/NAEU/Upload/Community/7f612127db020250113043040380.png",
-        alt: "Deadeye",
-        title: "Deadeye",
-    },
-    {
-        id: 31,
         src: "https://s1.pearlcdn.com/NAEU/Upload/Community/efd46d20d6720250707213004680.png",
         alt: "Wukong",
         title: "Wukong",
     },
     {
-        id: 32,
+        id: 31,
         src: "https://s1.pearlcdn.com/NAEU/Upload/Community/cfa60c745c620260105181401408.png",
         alt: "Seraph",
         title: "Seraph",

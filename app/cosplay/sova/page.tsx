@@ -12,7 +12,7 @@ const xIcon = (
 export const cosplaySova = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/GXmGewsWQAAULEe?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/GXmGewsWQAAULEe?format=jpg&name=medium",
         alt: "vanepujol",
     },
     {
@@ -22,7 +22,7 @@ export const cosplaySova = [
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/G2uPZQ0WcAA2DVX?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/G2uPZQ0WcAA2DVX?format=jpg&name=medium",
         alt: "valorant champions",
     },
     {
@@ -32,12 +32,12 @@ export const cosplaySova = [
     },
     {
         id: 5,
-        src: "https://pbs.twimg.com/media/GeXXf0GWwAAbgw0?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/GeXXf0GWwAAbgw0?format=jpg&name=medium",
         alt: "makeup sova",
     },  
     {
         id: 6,
-        src: "https://pbs.twimg.com/media/GjvrH9tWsAE_b8F?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/GjvrH9tWsAE_b8F?format=jpg&name=medium",
         alt: "san valentin sova",
     }, 
   
@@ -48,7 +48,7 @@ export const texts = {
     title: "Sova",
     subtitle: "Valorant",
     quote: "Da igual que huyan, los encontraré",
-    credits: "Vanepujol - Iro.prods",
+    credits: "Vanepujol - Iro.prods - Riot Games",
     title2: "El cazador",
     whoIs: "Alexander 'Shasha' Novikov es un agente de Valorant, el shooter de Riot Games. Es un explorador de Rusia y su seña de identidad es llevar un arco de alta tecnología consigo con el que puede disparar flechas de reconocimiento o explosivas para localizar y eliminar a los enemigos… ¡Eh! Y también se ayuda con un dron muy mono, personalizado como si fuese un búho metálico de tonos cyan ¿Por qué esa ave en concreto? Porque su nombre, “Сова”, es búho en ruso. Perdió su ojo derecho en una pelea contra su contraparte de la “otra Tierra”, reemplazándolo por uno biónico que le ayuda en el rastreo.",
     officialSite: "https://playvalorant.com/es-es/agents/sova/",
@@ -75,25 +75,33 @@ export default function Sova() {
           
           <ArtGallery imageSets={[cosplaySova]} />    
          
-          <p className="text-center mt-8 text-sm text-gray-500">
+          <p className="text-center mt-8 text-sm text-white/70">
             {texts.credits}
           </p>
 
+<section className="max-w-6xl mx-auto" >
           <FadeInSection>
-          <div className="mt-20 text-center">
+          <div className="mt-20">
               <div className="mx-5 md:mx-16 py-8 border-t border-white/10" />
-            <h2 className="subtitle text-3xl mb-4">{texts.title2}</h2>
+            <h2 className="subtitle text-3xl mb-4 text-center">{texts.title2}</h2>
             <p className="text-white mb-6">{texts.whoIs}</p>
+            <div className="text-center">
             <a href={texts.officialSite} target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
               Sitio oficial de Valorant
             </a>
+            </div>
             
           </div>
           </FadeInSection>
           
-          <div className="mt-12 text-center">
+          <div className="mt-12">
             <FadeInSection>
-             <div className="bg-[#9D50BB]/30 p-4 md:p-6"><p className="border border-white/50 p-6 md:p-8 text-white">{texts.storyTime}</p></div>
+            <div className="bg-[#9D50BB]/30 p-3 md:p-6"><p className="border border-white/50 p-4 md:p-8 text-white">{texts.storyTime}</p></div>
+            </FadeInSection>
+          </div>
+</section>
+          <div className="mt-6 text-center">
+            <FadeInSection>
             <SocialMediaBanner  
                 social="¡Tengo una cuenta en Twitter dedicada a Sova!"
                 name="@ViickyScarlet"
@@ -103,7 +111,7 @@ export default function Sova() {
             <div className="mt-8 py-2 border-t border-white/10" />
             </FadeInSection>
             <FadeInSection>
-            <ul className="title list-style-none text-white text-lg py-5">
+            <ul className="text-[#db80ff] list-style-none text-lg py-5">
               {texts.events.map((event, index) => (
                 <li className="mb-2" key={index}>{event}</li>
               ))}

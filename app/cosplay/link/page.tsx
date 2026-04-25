@@ -32,22 +32,22 @@ export const cosplayLink = [
     },   
     {
         id: 6,
-        src: "https://pbs.twimg.com/media/F5cH2bdW8AACzSD?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/F5cH2bdW8AACzSD?format=jpg&name=medium",   
         alt: "asturias playa",
     },
     {
         id: 9,
-        src: "https://pbs.twimg.com/media/EMO0WwpWoAEVdnP?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/EMO0WwpWoAEVdnP?format=jpg&name=medium",   
         alt: "rob",
     },
     {
         id: 10,
-        src: "https://pbs.twimg.com/media/FMHxse0XsAUsLoh?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/FMHxse0XsAUsLoh?format=jpg&name=medium",   
         alt: "rob",
     },
     {
         id: 8,
-        src: "https://pbs.twimg.com/media/FjfG4i-X0AcowHp?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/FjfG4i-X0AcowHp?format=jpg&name=medium",   
         alt: "rob",
     }, 
     {
@@ -57,7 +57,7 @@ export const cosplayLink = [
     },
     {
         id: 12,
-        src: "https://pbs.twimg.com/media/F3qwZ6wX0AYVRci?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/F3qwZ6wX0AYVRci?format=jpg&name=medium",   
         alt: "gerudo",
     },
     {
@@ -77,7 +77,7 @@ export const texts = {
     title: "Link",
     subtitle: "The Legend Of Zelda: Breath Of The Wild",
     quote: "HYAAAAAA",
-    credits: "Irene Kuroi - Mi madre! - Rob - Dani Diaz",
+    credits: "Irene Kuroi - Mi madre! - Photorobertog - Dani Díaz",
     title2: "El héroe de Hyrule",
     whoIs: "Link es un joven hyliano que despierta en el Santuario de la Vida de la Meseta de los Albores después de 100 años sin recordar nada de su pasado, cuando el cataclismo asoló todo el reino. Fue elegido caballero protector de la Princesa Zelda y elegido por la Espada Maestra, y ahora explora el basto mundo de Hyrule para recuperar sus recuerdos, derrotar a Ganon y salvar a la princesa, poniendo a prueba su astucia y valentía… aunque a veces se entretiene comiendo, haciendo el loco por ahí con la Piedra Sheikah o atropellando a los pobres pollitos con la moto~",
     storyTime: "BOF! Link, Link… posiblemente el personaje que más veces he llevado, ya sea con el arco y la flecha ancestral o la Espada Maestra, o simplemente con la Piedra Sheikah y mis Princesas de la calma ❀, versión campeón, versión Gerudo, versión casual…  He de decir que Breath Of The Wild no es solo mi juego de Zelda favorito, sino que es mi videojuego favorito; por supuesto seguido por el Tears Of The Kingdom. Las sensaciones que me dio en su día y que sin duda siguen ahí a día de hoy es algo… mágico y único. La aventura que viví en cada paso sobre la hierba, el valor para enfrentarme a cada enemigo, el paisaje a mis pies cuando subía a las montañas, el correr huyendo despavoridamente de los rayos láseres de los guardianes, el meterme en cada santuario de luces de azul neón resolviendo puzzles… Ya solo escuchar la música o ver imágenes de Zelda y Link me llena el corazón a día de hoy. Y quise transmitir todo esto a través de mi cosplay, uno en el que puse todas mis ganas y mil de cariño tras todo lo que supuso llevar a Sonic. A día de hoy no sé cómo lo hago, pero siempre encuentro alguna excusa por pequeña que sea para volver a llevarlo. ¿Podría actualizarlo a la versión de TOTK?", 
@@ -106,43 +106,42 @@ export default function Link() {
           <ArtGallery imageSets={[cosplayLink]} />
 
          
-          <p className="text-center mt-8 text-sm text-gray-500">
+          <p className="text-center mt-8 text-sm text-white/70">
             {texts.credits}
           </p>
 
-          <FadeInSection>
-          <div className="mt-20 text-center">
-              <div className="mx-5 md:mx-16 py-8 border-t border-white/10" />
-            <h2 className="subtitle text-3xl mb-4">{texts.title2}</h2>
-            <p className="text-white mb-6">{texts.whoIs}</p>
+          <div className="max-w-6xl mx-auto">
+            <FadeInSection>
+            <div className="mt-20">
+                <div className="mx-5 md:mx-16 py-8 border-t border-white/10" />
+              <h2 className="subtitle text-3xl mb-4 text-center">{texts.title2}</h2>
+              <p className="text-white mb-6">{texts.whoIs}</p>
+            </div>
+            </FadeInSection>
             
+            <div className="mt-12">
+              <FadeInSection>
+              <div className="bg-[#9D50BB]/30 p-3 md:p-6"><p className="border border-white/50 p-4 md:p-8 text-white">{texts.storyTime}</p></div>
+              </FadeInSection>
+            </div>
+          </div>
+
+          <FadeInSection>
+          <ul className="text-[#db80ff] text-center mb-6 list-style-none text-lg py-5">
+            {texts.events.map((event, index) => (
+              <li className="mb-2" key={index}>{event}</li>
+            ))}
+          </ul>
+          <div className="flex justify-center">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X7mliLyz6Io?si=eanj6phqolwdu3Jb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </div>
+          <div className="flex justify-center">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z2VtJ-qtVCo?si=rJlBsHBhTdEEKHi9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </div>
+           <div className="flex justify-center">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2csIpObwI-s?si=jlpIzlnZ9MPFCWye" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
           </FadeInSection>
-          
-          <div className="mt-12 text-center">
-            <FadeInSection>
-            <div className="bg-[#9D50BB]/30 p-4 md:p-6"><p className="border border-white/50 p-6 md:p-8 text-white">{texts.storyTime}</p></div>
-            </FadeInSection>
-            <FadeInSection>
-            <ul className="title mb-6 list-style-none text-white text-lg py-5">
-              {texts.events.map((event, index) => (
-                <li className="mb-2" key={index}>{event}</li>
-              ))}
-            </ul>
-            <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X7mliLyz6Io?si=eanj6phqolwdu3Jb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </div>
-            <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z2VtJ-qtVCo?si=rJlBsHBhTdEEKHi9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </div>
-             <div className="flex justify-center">
-              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2csIpObwI-s?si=jlpIzlnZ9MPFCWye" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </div>
-            </FadeInSection>
-              
-          </div>
-          
-
         </div>
       </section>
     </div>

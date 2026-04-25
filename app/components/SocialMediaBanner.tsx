@@ -9,7 +9,7 @@ export default function SocialMediaBanner ({ social, name, url, icon }: SocialMe
     return ( 
         <section className="pt-10">
             <div className="py-6 border-t border-white/10" />
-            <p className="text-white text-center">{social}</p>
+            <p className="text-white text-center px-8">{social}</p>
             <div className="text-center p-5">
                 <a 
                     href={url}

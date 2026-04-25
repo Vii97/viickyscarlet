@@ -13,63 +13,63 @@ export const bdoocs = [
     icon: "",
     name: "Eru",
     href: "./black-desert/archer",
-    image: "/bdo/eru.jpg",
+    image: "/bdo/eru.webp",
   },
   {
     id: 2,
     icon: "",
     name: "Akame",
     href: "./black-desert/lahn",
-    image: "/bdo/akame.jpg",
+    image: "/bdo/akame.webp",
   },
   {
     id: 3,
     icon: "",
     name: "Anubis",
     href: "./black-desert/hashashin",
-    image: "/bdo/anubis.jpg",
+    image: "/bdo/anubis.webp",
   },
   {
     id: 4,
     icon: "",
     name: "Luth",
     href: "./black-desert/ranger",
-    image: "/bdo/luth.jpg",
+    image: "/bdo/luth.webp",
   },
   {
     id: 5,
     icon: "",
     name: "Ran",
     href: "./black-desert/dosa",
-    image: "/bdo/ran.jpg",
+    image: "/bdo/ran.webp",
   },
   {
     id: 6,
     icon: "",
     name: "- Otros -",
     href: "./black-desert/otros",
-    image: "/bdo/otros.jpg",
+    image: "/bdo/otros.webp",
   },
 ];
 
 export const screenshotBDO = [
-    { id: 1, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/886805e609420251027185632569.jpg", alt: "BDO" },
-    { id: 2, src: "https://pbs.twimg.com/media/G0_2LdOWUAAmnyf?format=jpg&name=4096x4096", alt: "BDO" },
-    { id: 3, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/409bf3caa0d20250312190854356.jpg", alt: "BDO" },
-    { id: 4, src: "https://pbs.twimg.com/media/G510-3hWQAA_CNj?format=jpg&name=4096x4096", alt: "BDO" },
-    { id: 5, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/ed3167a01d620250312190447948.jpg", alt: "BDO" },
-    { id: 6, src: "https://pbs.twimg.com/media/Gm_PYl-WMAAcYNk?format=jpg&name=4096x4096", alt: "BDO" },
-    { id: 7, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/6301bbfe88820250312184833063.jpg", alt: "BDO" },
-    { id: 8, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/42b1a34e0a720250312185109337.jpg", alt: "BDO" },
-    { id: 9, src: "https://pbs.twimg.com/media/GqdPftfXMAEfLQx?format=jpg&name=4096x4096", alt: "BDO" },
-    { id: 10, src: "https://pbs.twimg.com/media/Gtve_02WcAA4q9B?format=jpg&name=4096x4096", alt: "BDO" },
-    { id: 11, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/ca6bd11d70520240929182132462.jpg", alt: "BDO" },
-    { id: 12, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/b3ee452780820240929175655114.jpg", alt: "BDO" },
-    { id: 13, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/d457126820920240929180022898.jpg", alt: "BDO" },
-    { id: 14, src: "https://pbs.twimg.com/media/G4IYFN6XkAEvb5b?format=jpg&name=4096x4096", alt: "BDO" },
-    { id: 15, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/ab7f4d3be7d20250513171935970.jpg", alt: "BDO" },
-    { id: 16, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/6e7d0f81e1920250513174843775.jpg", alt: "BDO" },
-    { id: 17, src: "https://pbs.twimg.com/media/Gqn-g0dW8AA5xp4?format=jpg&name=4096x4096", alt: "BDO" },
+    { id: 1, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/886805e609420251027185632569.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 2, src: "https://pbs.twimg.com/media/G0_2LdOWUAAmnyf?format=jpg&name=medium", alt: "BDO" },
+    { id: 3, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/409bf3caa0d20250312190854356.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 4, src: "https://pbs.twimg.com/media/G510-3hWQAA_CNj?format=jpg&name=medium", alt: "BDO" },
+    { id: 5, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/ed3167a01d620250312190447948.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 6, src: "https://pbs.twimg.com/media/Gm_PYl-WMAAcYNk?format=jpg&name=medium", alt: "BDO" },
+    { id: 7, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/6301bbfe88820250312184833063.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 8, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/42b1a34e0a720250312185109337.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 9, src: "https://pbs.twimg.com/media/GqdPftfXMAEfLQx?format=jpg&name=medium", alt: "BDO" },
+    { id: 10, src: "https://pbs.twimg.com/media/Gtve_02WcAA4q9B?format=jpg&name=medium", alt: "BDO" },
+    { id: 11, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/ca6bd11d70520240929182132462.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 12, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/b3ee452780820240929175655114.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 13, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/d457126820920240929180022898.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 14, src: "https://pbs.twimg.com/media/G4IYFN6XkAEvb5b?format=jpg&name=medium", alt: "BDO" },
+    { id: 15, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/ab7f4d3be7d20250513171935970.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 16, src: "https://s1.pearlcdn.com/NAEU/Upload/Community/6e7d0f81e1920250513174843775.jpg?format=jpg&name=medium", alt: "BDO" },
+    { id: 17, src: "https://pbs.twimg.com/media/Gqn-g0dW8AA5xp4?format=jpg&name=medium", alt: "BDO" },
 ];
 
 export default function BDO() {
@@ -115,7 +115,7 @@ export default function BDO() {
                       />
                     </div>
                   )}
-                  <div className="relative aspect-[3/4] overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-white/30 group-hover:shadow-[0_0_20px_rgba(188,188,188,0.3)]">
+                  <div className="relative aspect-3/4 overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-white/30 group-hover:shadow-[0_0_20px_rgba(188,188,188,0.3)]">
                     <Image
                       src={character.image}
                       alt={character.name}

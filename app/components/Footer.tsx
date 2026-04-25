@@ -27,10 +27,11 @@ export default function Footer() {
           </a>
           <div className="flex justify-center mt-6">
             <Image 
-              src="/home/eruchibi.png"  
+              src="/home/eruchibi.webp"  
               alt="Logo Viicky Scarlet"
-              width={100}
-              height={100}  
+              width={25}
+              height={27}  
+              className="h-27 w-25"
             />
           </div>
         </div>

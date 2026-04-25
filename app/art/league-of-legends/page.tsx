@@ -6,32 +6,32 @@ import { ArtGallery } from "@/app/components/ArtGallery";
 export const artLOL = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/F-p9DOkWMAArc15?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/F-p9DOkWMAArc15?format=jpg&name=medium",
         alt: "ez hs",
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/F9SPSsIWgAAdSBb?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/F9SPSsIWgAAdSBb?format=jpg&name=medium",   
         alt: "ez hs chibi",
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/GZXrEvdWQAAieDq?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GZXrEvdWQAAieDq?format=jpg&name=medium",   
         alt: "ezreal kaisa",
     },
         {
         id: 4,
-        src: "https://pbs.twimg.com/media/FKIQSUbWUAEzTby?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/FKIQSUbWUAEzTby?format=jpg&name=medium",   
         alt: "vi",
     },
     {
         id: 5,
-        src: "https://pbs.twimg.com/media/F1f-cYoWIAsoQN1?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/F1f-cYoWIAsoQN1?format=jpg&name=medium",   
         alt: "rakan",
     },
     {
         id: 6,
-        src: "https://pbs.twimg.com/media/FeTa9mxXgAA2-3V?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/FeTa9mxXgAA2-3V?format=jpg&name=medium",   
         alt: "settphelios",
     }
 ]

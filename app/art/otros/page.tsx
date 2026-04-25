@@ -4,27 +4,27 @@ import FadeInSection from "@/app/components/FadeInSection";
 export const artOtros = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/Gcv6TR-XgAEcjwH?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/Gcv6TR-XgAEcjwH?format=jpg&name=medium",
         alt: "ororon",
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/FzTkT8pWIAMG-9X?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/FzTkT8pWIAMG-9X?format=jpg&name=medium",   
         alt: "kaminari",
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/Fv2cK8pWcAEr1qT?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/Fv2cK8pWcAEr1qT?format=jpg&name=medium",   
         alt: "zelda",
     },
         {
         id: 4,
-        src: "https://pbs.twimg.com/media/EYsqZfiWkAAZpcf?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/EYsqZfiWkAAZpcf?format=jpg&name=medium",   
         alt: "zelink",
     },
     {
         id: 5,
-        src: "https://pbs.twimg.com/media/HC1sXWfXgAAD5DL?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/HC1sXWfXgAAD5DL?format=jpg&name=medium",   
         alt: "wwm moon",
     },
 ]

@@ -1,25 +1,29 @@
 import FadeInSection from "@/app/components/FadeInSection";
 import { ArtGallery } from "@/app/components/ArtGallery";
 import Image from "next/image";
+import { OCCard } from "@/app/components/OCCard";
+import { useState } from "react";
+import AkameOC from "@/app/data/AkameOC";
 
 export const screenshotAkame = [
-    { id: 1, src: "https://pbs.twimg.com/media/GXXBPRoWkAAYDlj?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 2, src: "https://pbs.twimg.com/media/G-88WGVX0AANhUh?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 3, src: "https://pbs.twimg.com/media/GQtut4BXMAEl9ax?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 4, src: "https://pbs.twimg.com/media/GiUIsurXQAA5iwM?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 5, src: "https://pbs.twimg.com/media/GiK8IHNXkAA6Gu7?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 6, src: "https://pbs.twimg.com/media/GiK8G0DXUAA_CIj?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 7, src: "https://pbs.twimg.com/media/HDkvf3PXYAEedCe?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 8, src: "https://pbs.twimg.com/media/Gd6R7EBXEAAP0A8?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 9, src: "https://pbs.twimg.com/media/G5_hi1bWgAEIVH2?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 10, src: "https://pbs.twimg.com/media/G5_hlKGXgAAfeHE?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 11, src: "https://pbs.twimg.com/media/GjJFUIJXoAAdDVJ?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 12, src: "https://pbs.twimg.com/media/F3SSwpcWIAAfusd?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 13, src: "https://pbs.twimg.com/media/F3lJUZHbwAA6Jtw?format=jpg&name=4096x4096", alt: "Akame" },
-    { id: 14, src: "https://pbs.twimg.com/media/F3Sbyx1WAAALKcg?format=jpg&name=4096x4096", alt: "Akame" },
+    { id: 1, src: "https://pbs.twimg.com/media/GXXBPRoWkAAYDlj?format=jpg&name=medium", alt: "Akame" },
+    { id: 2, src: "https://pbs.twimg.com/media/G-88WGVX0AANhUh?format=jpg&name=medium", alt: "Akame" },
+    { id: 3, src: "https://pbs.twimg.com/media/GQtut4BXMAEl9ax?format=jpg&name=medium", alt: "Akame" },
+    { id: 4, src: "https://pbs.twimg.com/media/GiUIsurXQAA5iwM?format=jpg&name=medium", alt: "Akame" },
+    { id: 5, src: "https://pbs.twimg.com/media/GiK8IHNXkAA6Gu7?format=jpg&name=medium", alt: "Akame" },
+    { id: 6, src: "https://pbs.twimg.com/media/GiK8G0DXUAA_CIj?format=jpg&name=medium", alt: "Akame" },
+    { id: 7, src: "https://pbs.twimg.com/media/HDkvf3PXYAEedCe?format=jpg&name=medium", alt: "Akame" },
+    { id: 8, src: "https://pbs.twimg.com/media/Gd6R7EBXEAAP0A8?format=jpg&name=medium", alt: "Akame" },
+    { id: 9, src: "https://pbs.twimg.com/media/G5_hi1bWgAEIVH2?format=jpg&name=medium", alt: "Akame" },
+    { id: 10, src: "https://pbs.twimg.com/media/G5_hlKGXgAAfeHE?format=jpg&name=medium", alt: "Akame" },
+    { id: 11, src: "https://pbs.twimg.com/media/GjJFUIJXoAAdDVJ?format=jpg&name=medium", alt: "Akame" },
+    { id: 12, src: "https://pbs.twimg.com/media/F3SSwpcWIAAfusd?format=jpg&name=medium", alt: "Akame" },
+    { id: 13, src: "https://pbs.twimg.com/media/F3lJUZHbwAA6Jtw?format=jpg&name=medium", alt: "Akame" },
+    { id: 14, src: "https://pbs.twimg.com/media/F3Sbyx1WAAALKcg?format=jpg&name=medium", alt: "Akame" },
 ];
 
 export default function Lahn() {
+const [openModal, setOpenModal] = useState<string | null>(null);
     return (
         <div className="min-h-screen">
             <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-25">
@@ -44,9 +48,16 @@ export default function Lahn() {
                 </div>
             </section>
             <div className="mt-8 flex justify-center">
-            <a href="/oc/akame" target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
-              Ver ficha de personaje
-            </a>
+                    <button
+                      onClick={() => setOpenModal('akame')}
+                      className="cursor-pointer text-white bg-black border-[#9D50BB] border hover:bg-[#9D50BB]/50 px-4 py-2 transition-colors duration-300 inline-block"
+                    >
+                      Ver ficha de personaje
+                    </button>
+
+                    {openModal === 'akame' && (
+                      <OCCard oc={AkameOC} onClose={() => setOpenModal(null)} />
+                    )}
             </div>  
         </div>
     );

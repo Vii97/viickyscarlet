@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
             Propósito del sitio
           </h2>
             <p className="text-white/80 leading-relaxed mb-4">
-              El principal propósito de <span className="text-white font-semibold">viickyscarlet.vercel.com</span> es de mostrar el contenido creativo de mi persona. Un lugar que recopila un montón de proyectos hechos durante varios años a lo largo de mi carrera y una forma de compartir mis hobbies.
+              El principal propósito de <span className="text-white font-semibold">viickyscarlet.pages.dev</span> es de mostrar el contenido creativo de mi persona. Un lugar que recopila un montón de proyectos hechos durante varios años a lo largo de mi carrera y una forma de compartir mis hobbies.
             </p>
               <p className="text-white/70 pt-4">
                Esta es mi única URL oficial. Cualquiera que sea diferente, por muy parecida que sea, seguramente sea fake.
@@ -67,7 +67,7 @@ export default function PrivacyPolicy() {
             Datos proporcionados en formularios
           </h2>
             <p className="text-white/80 leading-relaxed">
-              El funcionamiento de los formularios es básico y esencial. Los datos proporcionados corresponden única y exclusivamente para el propósito de atender las peticiones <span className="text-white font-semibold">sin compartirse con terceros</span> y no se conservarán una vez se haya atendido la solicitud con éxito. Solo se manejarán por el administrador del sitio web.
+              El funcionamiento de los formularios es básico y esencial. Los datos proporcionados corresponden única y exclusivamente para el propósito de atender las peticiones sin compartirse con terceros y no se conservarán una vez se haya atendido la solicitud con éxito. Solo se manejarán por el administrador del sitio web.
             </p>
         </section>
 
@@ -87,9 +87,10 @@ export default function PrivacyPolicy() {
                 Cookies esenciales
                 </h3>
                 <p className="text-white/70">
-                  Son aquellas que sirven solo para el funcionamiento básico de la web, como recordar el consentimiento en el banner de cookies. Son cookies técnicas imprescindibles que <span className="text-white">no rastrearán tu comportamiento</span> ni te vigilarán de ninguna forma.
+                  Son aquellas que sirven solo para el funcionamiento básico de la web, como recordar el consentimiento en el banner de cookies. Son cookies técnicas imprescindibles que no rastrearán tu comportamiento ni te vigilarán de ninguna forma.
                 </p>
-
+                <p className='text-white'>Este sitio web no usa cookies de terceros.</p>
+{/*}
                 <h3 className="text-white font-semibold mb-2 pt-2 flex items-center gap-2">
                   Cookies de terceros
                 </h3>
@@ -102,11 +103,10 @@ export default function PrivacyPolicy() {
                     <li>Black Desert</li>
                   </ul>
                   <p className="text-white/70 mt-3">
-                  <span className="text-white">También se usa Google Fonts</span>. Esto se conecta a los servidores de Google.
                   </p>
                 <p className="text-white/70 mt-3">
                   Para más información, recomiendo consultar sus respectivas políticas de privacidad.
-                </p>
+                </p>*/}
             </div>
         </section>
 
@@ -117,7 +117,7 @@ export default function PrivacyPolicy() {
             Estadísticas
           </h2>
             <p className="text-white/80 leading-relaxed">
-              Los datos estadísticos son solo los proporcionados por <span className="text-white font-semibold">Vercel Analytics</span>, que forman parte del seguimiento esencial de la web y <span className="text-white">no recopila datos de carácter personal</span> de los usuarios.
+              Los datos estadísticos son solo los proporcionados por <span className="text-white font-semibold">las analíticas de Cloudfare</span>, que forman parte del seguimiento esencial de la web y <span className="text-white">no recopila datos de carácter personal</span> de los usuarios.
             </p>
         </section>
       </div>

@@ -5,24 +5,39 @@ import { ArtGallery } from "@/app/components/ArtGallery";
 export const juvia = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/F5rv25JWIAAE_QE?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/F5rv25JWIAAE_QE?format=jpg&name=medium",
         alt: "juvia",
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/FCPHghTWEAIlS7v?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/FCPHghTWEAIlS7v?format=jpg&name=medium",   
+        alt: "juvia",
+    },
+    {
+        id: 3,
+        src: "https://pbs.twimg.com/media/HGl2qgRXUAAMtJ-?format=jpg&name=medium",   
+        alt: "juvia",
+    },
+    {
+        id: 4,
+        src: "https://pbs.twimg.com/media/HGl2vChWAAAjfe4?format=jpg&name=medium",   
+        alt: "juvia",
+    },
+    {
+        id: 5,
+        src: "https://pbs.twimg.com/media/HGl2wfOWsAA3Nk_?format=jpg&name=medium",   
         alt: "juvia",
     }
 ]
 export const erza = [
        {
         id: 1,
-        src: "https://pbs.twimg.com/media/EdhyFxeWsAEVqYn?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/EdhyFxeWsAEVqYn?format=jpg&name=medium",
         alt: "erza",
     }, 
        {
         id: 2,
-        src: "https://pbs.twimg.com/media/EeLJPM5XoAUCEmu?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/EeLJPM5XoAUCEmu?format=jpg&name=medium",
         alt: "erza",
     },  
     {
@@ -32,7 +47,7 @@ export const erza = [
     }, 
     {
         id: 4,
-        src: "https://pbs.twimg.com/media/DL2mQYHWsAAfW40?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/DL2mQYHWsAAfW40?format=jpg&name=medium",
         alt: "erza",
     }, 
 ]
@@ -40,7 +55,7 @@ export const erza = [
 export const sadie = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/ESbIm4JXcAcoZSo?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/ESbIm4JXcAcoZSo?format=jpg&name=medium",
         alt: "sadie",
     },
     {
@@ -50,38 +65,30 @@ export const sadie = [
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/ESbIq6jX0AEPeLi?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/ESbIq6jX0AEPeLi?format=jpg&name=medium",   
         alt: "sadie",
     },
      {
         id: 4,
-        src: "https://pbs.twimg.com/media/EiMjD33WkAU9XYB?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/EiMjD33WkAU9XYB?format=jpg&name=medium",   
         alt: "sadie",
     },   
-]
-
-export const pokemon = [
-    {
-        id: 1,
-        src: "https://pbs.twimg.com/media/EU6soQtWAAAX4qo?format=jpg&name=large",
-        alt: "n",
-    },
-    {
-        id: 2,
-        src: "https://pbs.twimg.com/media/EWIK3vnWAAErLq1?format=jpg&name=large",   
-        alt: "n",
-    }
 ]
 
 export const vi = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/FjfGwLFX0BA68ov?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/FjfGwLFX0BA68ov?format=jpg&name=medium",
         alt: "vi",
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/F-0ukWMXcAEQORw?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/F-0ukWMXcAEQORw?format=jpg&name=medium",   
+        alt: "vi",
+    },
+    {
+        id: 3,
+        src: "https://pbs.twimg.com/media/F_8fTWSX0AA_vZd?format=jpg&name=medium",   
         alt: "vi",
     }
 ]
@@ -89,35 +96,40 @@ export const vi = [
 export const yandere = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/GIplFC0WkAAciPw?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/GIplFC0WkAAciPw?format=jpg&name=medium",
         alt: "yandere",
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/GIplFF6WIAAw1-C?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/GIplFF6WIAAw1-C?format=jpg&name=medium",   
         alt: "yandere",
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/GIplFKGW0AEWnwt?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/GIplFKGW0AEWnwt?format=jpg&name=medium",   
         alt: "yandere",
     },
      {
         id: 4,
-        src: "https://pbs.twimg.com/media/GIplFDLWEAAjSBJ?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/GIplFDLWEAAjSBJ?format=jpg&name=medium",   
         alt: "yandere",
-    },   
+    }, 
+     {
+        id: 5,
+        src: "https://pbs.twimg.com/media/DLfb8ozWkAAt3qk?format=jpg&name=medium",   
+        alt: "yandere",
+    },     
 ]
 
 export const kaminari = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/FI6AdkTWQAELzna?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/FI6AdkTWQAELzna?format=jpg&name=medium",
         alt: "kaminari",
     },
      {
         id: 2,
-        src: "https://pbs.twimg.com/media/FI6AZjxXIAcbP-C?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/FI6AZjxXIAcbP-C?format=jpg&name=medium",
         alt: "kaminari",
     }, 
      {
@@ -127,16 +139,67 @@ export const kaminari = [
     }, 
   ]
 
+export const otros = [
+      {
+        id: 1,
+        src: "https://pbs.twimg.com/media/EU6soQtWAAAX4qo?format=jpg&name=medium",
+        alt: "n",
+        title: "N - Pokémon Black & White", 
+    },
+      {
+        id: 2,
+        src: "https://pbs.twimg.com/media/GbOBqOcWAAAgg4t?format=jpg&name=medium",
+        alt: "yuuki",
+        title: "Yuuki Cross - Vampire Knight"
+    },
+      {
+        id: 3,
+        src: "https://pbs.twimg.com/media/F0qty_MWYAMI13y?format=jpg&name=medium",
+        alt: "varus",
+        title: "Snow Moon Varus - League Of Legends"
+    },
+    {
+        id: 4,
+        src: "https://pbs.twimg.com/media/F8Ju2RgWIAAP8RS?format=jpg&name=medium",   
+        alt: "silver",
+        title: "Silver The Hedgehog - Sonic"
+    },
+    {
+        id: 5,
+        src: "https://pbs.twimg.com/media/E5i61D3XMAALI7K?format=jpg&name=medium",   
+        alt: "kikyo",
+        title: "Kikyo - Inuyasha"
+    },
+    {
+        id: 6,
+        src: "https://pbs.twimg.com/media/GK4Sc6wXIAAeR-G?format=jpg&name=medium",   
+        alt: "inuyasha",
+        title: "Inuyasha"
+    },
+    {
+        id: 7,
+        src: "https://pbs.twimg.com/media/HBSak5QX0AETflN?format=jpg&name=medium",   
+        alt: "WWM",
+        title: "Young Master - Where Winds Meet"
+    },
+    {
+        id: 8,
+        src: "https://pbs.twimg.com/media/G1oOST1XcAA2x_S?format=jpg&name=medium",   
+        alt: "Ororon",
+        title: "Ororon - Genshin Impact"
+    },
+]
+
 export default function OtrosCosplays() {
 
   const sections = [
     { id: "juvia", nombre: "Juvia", serie: "Fairy Tail", data: juvia },
     { id: "erza", nombre: "Erza", serie: "Fairy Tail", data: erza },
-    { id: "sadie", nombre: "Sadie Kane", serie: "The Kane Chronicles", data: sadie },
-    { id: "n", nombre: "N", serie: "Pokémon B&W", data: pokemon },
     { id: "vi", nombre: "Vi", serie: "Arcane", data: vi },
     { id: "yandere", nombre: "Ayano Aishi", serie: "Yandere Simulator", data: yandere },
     { id: "kaminari", nombre: "Denki Kaminari", serie: "My Hero Academia", data: kaminari },
+    { id: "sadie", nombre: "Sadie Kane", serie: "The Kane Chronicles", data: sadie },
+    { id: "otros", nombre: "Más videojuegos y mangas...", serie: "Pokémon, LOL, Inuyasha, Genshin...", data: otros },
   ];
 
   const scrollToSection = (id: string) => {
@@ -192,6 +255,10 @@ export default function OtrosCosplays() {
               </div>
             </FadeInSection>
           ))}
+
+          <p className="text-center mt-8 text-sm text-white/70">
+            Photo Fantasy - Dani Díaz - Gigano Regulus - Yennifer - Beeladio - Adrii - Kaoru - Midoucloud - Phoenix Orange - Jhayr Pictures
+          </p>          
 
         </div>
       </section>

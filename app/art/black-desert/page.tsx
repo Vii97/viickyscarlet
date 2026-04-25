@@ -3,84 +3,89 @@
 import FadeInSection from "@/app/components/FadeInSection";
 import { ArtGallery } from "@/app/components/ArtGallery";
 import Image from "next/image"; 
+import { OCCard } from "@/app/components/OCCard";
+import AkameOC from "@/app/data/AkameOC";
+import { useState } from "react";
+import EruOC from "@/app/data/EruOC";
+import AnubisBDOOC from "@/app/data/AnubisBDOOC";
 
 
 export const artBDOeru = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/GbfRtPpbQAEHzl7?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/GbfRtPpbQAEHzl7?format=jpg&name=medium",
         alt: "wolf",
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/GH6yvL8WkAAs0gW?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GH6yvL8WkAAs0gW?format=jpg&name=medium",   
         alt: "academia",
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/HA0MGS-bYAAucWz?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/HA0MGS-bYAAucWz?format=jpg&name=medium",   
         alt: "comic",
     },
         {
         id: 4,
-        src: "https://pbs.twimg.com/media/GrjzDp6WcAAKTrV?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GrjzDp6WcAAKTrV?format=jpg&name=medium",   
         alt: "blue",
     },
     {
         id: 5,
-        src: "https://pbs.twimg.com/media/G1oZs8lXIAAg2B-?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/G1oZs8lXIAAg2B-?format=jpg&name=medium",   
         alt: "lake",
     },
     {
         id: 6,
-        src: "https://pbs.twimg.com/media/GQiOOI3XkAAyyLv?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GQiOOI3XkAAyyLv?format=jpg&name=medium",   
         alt: "sielos",
     },
     {
         id: 7,
-        src: "https://pbs.twimg.com/media/FztcGxSWIAMNHr3?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/FztcGxSWIAMNHr3?format=jpg&name=medium",   
         alt: "bi",
     },
     {
         id: 8,
-        src: "https://pbs.twimg.com/media/F9xYdSKWkAAu0qx?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/F9xYdSKWkAAu0qx?format=jpg&name=medium",   
         alt: "halloween",
     },
     {
         id: 9,
-        src: "https://s1.pearlcdn.com/NAEU/Upload/Community/77641a01a0520211025135023005.jpg",   
+        src: "https://s1.pearlcdn.com/NAEU/Upload/Community/77641a01a0520211025135023005.jpg?format=jpg&name=medium",   
         alt: "thunder",
     },
     {
         id: 10,
-        src: "https://pbs.twimg.com/media/HF4hkVyWsAAiy4Q?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/HF4hkVyWsAAiy4Q?format=jpg&name=medium",   
         alt: "fields",
     },
     {
         id: 11,
-        src: "https://pbs.twimg.com/media/GG8YWAiWwAEyldi?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/GG8YWAiWwAEyldi?format=jpg&name=medium",   
         alt: "flor",
     },
     {
         id: 12,
-        src: "https://pbs.twimg.com/media/GKlxrZpW0AAL1VH?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GKlxrZpW0AAL1VH?format=jpg&name=medium",   
         alt: "chibi",
     },
     {
         id: 13,
-        src: "https://pbs.twimg.com/media/GLeY72NXsAAtq84?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GLeY72NXsAAtq84?format=jpg&name=medium",   
         alt: "sketch",
     },
 ]
 export const artBDOluth = [
        {
         id: 1,
-        src: "https://pbs.twimg.com/media/Ge9dV_9WYAAwyoM?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/Ge9dV_9WYAAwyoM?format=jpg&name=medium",
         alt: "luth",
     }, 
        {
         id: 2,
-        src: "https://s1.pearlcdn.com/NAEU/Upload/News/14c396e220f20230823145309863.jpg",
+        src: "https://s1.pearlcdn.com/NAEU/Upload/News/14c396e220f20230823145309863.jpg?format=jpg&name=medium",
         alt: "luth",
     },  
 ]
@@ -96,22 +101,22 @@ export const artBDOakame = [
 export const artBDOanubis = [
       {
         id: 1,
-        src: "https://pbs.twimg.com/media/GZ8Pg1HWgAAXTin?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/GZ8Pg1HWgAAXTin?format=jpg&name=medium",
         alt: "anubis night",
     },
       {
         id: 2,
-        src: "https://pbs.twimg.com/media/GnoW6LoXIAA2g8h?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/GnoW6LoXIAA2g8h?format=jpg&name=medium",
         alt: "anubis portrait",
     },
       {
         id: 3,
-        src: "https://pbs.twimg.com/media/F3lxHPqWIBMWDyF?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/F3lxHPqWIBMWDyF?format=jpg&name=medium",
         alt: "modern",
     },
     {
         id: 4,
-        src: "https://pbs.twimg.com/media/Fe3tzZ_WAAAgPv-?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/Fe3tzZ_WAAAgPv-?format=jpg&name=medium",
         alt: "moderngraf",
     },
     {
@@ -122,6 +127,7 @@ export const artBDOanubis = [
 ]
 
 export default function BlackDesert() {
+const [openModal, setOpenModal] = useState<string | null>(null);
 
   const sections = [
     { id: "eru", nombre: "Eru", clase: "Archer" },
@@ -182,9 +188,16 @@ export default function BlackDesert() {
               <ArtGallery imageSets={[artBDOeru]} />
               
               <div className="mt-8 flex justify-center">
-                <a href="/oc/eru" target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
-                  Ver ficha de personaje
-                </a>
+                    <button
+                      onClick={() => setOpenModal('eru')}
+                      className="cursor-pointer text-white bg-black border-[#9D50BB] border hover:bg-[#9D50BB]/50 px-4 py-2 transition-colors duration-300 inline-block"
+                    >
+                      Ver ficha de personaje
+                    </button>
+
+                    {openModal === 'eru' && (
+                      <OCCard oc={EruOC} onClose={() => setOpenModal(null)} />
+                    )}
               </div>
             </div>
           </FadeInSection>        
@@ -214,9 +227,16 @@ export default function BlackDesert() {
                   <ArtGallery imageSets={[artBDOakame]} />
                   
                   <div className="mt-8 flex justify-center">
-                    <a href="/oc/akame" target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
+                    <button
+                      onClick={() => setOpenModal('akame')}
+                      className="cursor-pointer text-white bg-black border-[#9D50BB] border hover:bg-[#9D50BB]/50 px-4 py-2 transition-colors duration-300 inline-block"
+                    >
                       Ver ficha de personaje
-                    </a>
+                    </button>
+
+                    {openModal === 'akame' && (
+                      <OCCard oc={AkameOC} onClose={() => setOpenModal(null)} />
+                    )}
                   </div>
                 </div>
               </FadeInSection>     
@@ -233,24 +253,32 @@ export default function BlackDesert() {
               <ArtGallery imageSets={[artBDOanubis]} />
 
               <div className="mt-8 flex justify-center">
-                <a href="/oc/anubis-bdo" target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
-                  Ver ficha de personaje
-                </a>
+                    <button
+                      onClick={() => setOpenModal('anubisBDO')}
+                      className="cursor-pointer text-white bg-black border-[#9D50BB] border hover:bg-[#9D50BB]/50 px-4 py-2 transition-colors duration-300 inline-block"
+                    >
+                      Ver ficha de personaje
+                    </button>
+
+                    {openModal === 'anubisBDO' && (
+                      <OCCard oc={AnubisBDOOC} onClose={() => setOpenModal(null)} />
+                    )}
               </div>
             </div>
           </FadeInSection> 
-
+          <FadeInSection>
               <div id="CHIBIS" className="scroll-mt-24">
                 <div className="mx-5 md:mx-16 mt-10 pb-6 border-t border-white/10" /> 
               <h2 className="subtitle text-center text-4xl">CHIBIS</h2>
               <div className="py-2 mb-4 flex justify-center">
-              <a href="/art/black-desert/chibis" target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
+              <a href="/art/black-desert/chibis" target="_blank" rel="noopener noreferrer" className="text-white bg-black border-[#e6be8a] border hover:bg-[#e6be8a]/50 px-4 py-2 transition-colors duration-300 inline-block">
                 ¡Encuentra el chibi de tu clase!
-              </a></div>
+              </a>
+                </div>
                 </div>
               <Image src="https://s1.pearlcdn.com/NAEU/Upload/Community/7f27fe299a220240816234714309.png" 
               alt="Let Your Adventure Unfold!" width={1200} height={1200} className="mx-auto" />
-                
+        </FadeInSection>        
         </div>
       </section>
     </div>

@@ -4,60 +4,60 @@ import { ArtGallery } from "@/app/components/ArtGallery"
 export const cosplayEzreal = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/F6374GmWgAAY4eX?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/F6374GmWgAAY4eX?format=jpg&name=medium",
         alt: "danidiaz",
 
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/HFtjlVqXAAArbyq?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/HFtjlVqXAAArbyq?format=jpg&name=medium",
         alt: "danidiaz",
 
     },   
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/HFtjj7FXkAAu8wH?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/HFtjj7FXkAAu8wH?format=jpg&name=medium",
         alt: "danidiaz",
 
     },   
     {
         id: 4,
-        src: "https://pbs.twimg.com/media/ETZHl5HWkAE3byu?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/ETZHl5HWkAE3byu?format=jpg&name=medium",   
         alt: "gigano",
     },
         {
         id: 5,
-        src: "https://pbs.twimg.com/media/ETt0sp6WoAAz9Jz?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/ETt0sp6WoAAz9Jz?format=jpg&name=medium",   
         alt: "gigano",
     },
     {
         id: 6,
-        src: "https://pbs.twimg.com/media/Eb7PiYMVAAApvRP?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/Eb7PiYMVAAApvRP?format=jpg&name=medium",   
         alt: "gigano",
     },
     {
         id: 7,
-        src: "https://pbs.twimg.com/media/Gl2n43hXYAAhls4?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/Gl2n43hXYAAhls4?format=jpg&name=medium",   
         alt: "cosplayhunters",
     },    
     {
         id: 8,
-        src: "https://pbs.twimg.com/media/GRKgKL0WEAARjXY?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/GRKgKL0WEAARjXY?format=jpg&name=medium",   
         alt: "midou",
     }, 
     {
         id: 9,
-        src: "https://pbs.twimg.com/media/GEIrmvRWcAAfPkq?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/GEIrmvRWcAAfPkq?format=jpg&name=medium",   
         alt: "selfie",
     },
     {
         id: 11,
-        src: "https://pbs.twimg.com/media/F7NE-zuWkAAkkrT?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/F7NE-zuWkAAkkrT?format=jpg&name=medium",   
         alt: "voad",
     },
     {
         id: 12,
-        src: "https://pbs.twimg.com/media/F68-R9BWYAAtAO2?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/F68-R9BWYAAtAO2?format=jpg&name=medium",   
         alt: "star guardian",
     }
 ]
@@ -67,7 +67,7 @@ export const texts = {
     title: "Ezreal",
     subtitle: "League Of Legends",
     quote: "¡Misión aceptada! Espera... ¿A dónde vamos?",
-    credits: "Dani Diaz - Gigano Regulus",
+    credits: "Dani Diaz - Gigano Regulus - Cosplayers Hunters - Midoucloud - Voad",
     title2: "El explorador pródigo",
     whoIs: "Ezreal es un joven aventurero de Piltover que viaja por toda Runaterra en busca de tesoros y artefactos antiguos… y sus padres, quienes son también unos exploradores que se encuentran desaparecidos. Lo cuidó su tío el profesor Lymere, y a pesar de ser un liante, es increíblemente bueno en Cartografía e Historia. En Shurima encontró la tumba perdida de Ne’Zuk donde se topó con el guantelete de energía arcana que le sirve para defenderse y escapar de las peores trampas de las ruinas. Para nada tiene que ver con un tal Jarro PlumaLigera~",
     officialSite: "https://universe.leagueoflegends.com/es_ES/champion/ezreal/",
@@ -98,29 +98,31 @@ export default function Ezreal() {
 
           <ArtGallery imageSets={[cosplayEzreal]} />
 
-          <p className="text-center mt-8 text-sm text-gray-500">
+          <p className="text-center mt-8 text-sm text-white/70">
             {texts.credits}
           </p>
 
+<section className="max-w-6xl mx-auto" >
           <FadeInSection>
-          <div className="mt-20 text-center">
+          <div className="mt-20">
               <div className="mx-5 md:mx-16 py-8 border-t border-white/10" />
-            <h2 className="subtitle text-3xl mb-4">{texts.title2}</h2>
+            <h2 className="subtitle text-3xl mb-4 text-center">{texts.title2}</h2>
             <p className="text-white mb-6">{texts.whoIs}</p>
+            <div className="text-center">
             <a href={texts.officialSite} target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
               Sitio oficial de Universo LOL
             </a>
+            </div>
             
           </div>
           </FadeInSection>
           
-          <div className="mt-12 text-center">
+          <div className="mt-12">
             <FadeInSection>
-            <div className="bg-[#9D50BB]/30 p-4 md:p-6"><p className="border border-white/50 p-6 md:p-8 text-white">{texts.storyTime}</p></div>
+            <div className="bg-[#9D50BB]/30 p-3 md:p-6"><p className="border border-white/50 p-4 md:p-8 text-white">{texts.storyTime}</p></div>
             </FadeInSection>
           </div>
-          
-
+</section>
         </div>
       </section>
     </div>

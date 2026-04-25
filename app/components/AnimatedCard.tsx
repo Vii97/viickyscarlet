@@ -43,7 +43,7 @@ export const AnimatedCard = ({ image, onClick, onLoad }: AnimatedCardProps) => {
         onLoad={handleLoad}
         loading="eager"
         // Blur y opacidad
-        className={`w-full h-auto object-cover transition-all duration-700 ${
+        className={`w-full h-auto z-20 object-cover transition-all duration-700 ${
           onClick ? "hover:scale-110" : ""
         } ${
           isLoaded ? "opacity-100 blur-0" : "opacity-0 blur-sm"

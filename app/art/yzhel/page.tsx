@@ -1,11 +1,14 @@
-
+"use client"
 import FadeInSection from "@/app/components/FadeInSection";
 import { ArtGallery } from "@/app/components/ArtGallery";
+import { OCCard } from "@/app/components/OCCard";
+import YzhelOC from "@/app/data/YzhelOC";
+import { useState } from "react";
 
 export const artYzhel = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/GqBFq71W0AAmVC1?format=jpg&name=large",
+        src: "https://pbs.twimg.com/media/GqBFq71W0AAmVC1?format=jpg&name=medium",
         alt: "yzhel",
     },
     {
@@ -15,32 +18,33 @@ export const artYzhel = [
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/G5lRMIJWUAA6RQL?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/G5lRMIJWUAA6RQL?format=jpg&name=medium",   
         alt: "ocyzhel",
     },
         {
         id: 4,
-        src: "https://pbs.twimg.com/media/GuiqsfOWMAA8eoo?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GuiqsfOWMAA8eoo?format=jpg&name=medium",   
         alt: "yzhel valhalla",
     },
     {
         id: 5,
-        src: "https://pbs.twimg.com/media/GyARndvWYAEFY8d?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GyARndvWYAEFY8d?format=jpg&name=medium",   
         alt: "yzhel",
     },
     {
         id: 6,
-        src: "https://pbs.twimg.com/media/GuOW3qwWkAA_nFb?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/GuOW3qwWkAA_nFb?format=jpg&name=medium",   
         alt: "atardecer",
     },
     {
         id: 7,
-        src: "https://pbs.twimg.com/media/Gy-uFlTXMAAueol?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/Gy-uFlTXMAAueol?format=jpg&name=medium",   
         alt: "wereheog",
     }
 ]
 
 export default function Yzhel() {
+const [openModal, setOpenModal] = useState<string | null>(null);
   return (
     <div className="min-h-screen">
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-25">
@@ -60,9 +64,16 @@ export default function Yzhel() {
         </div>
       </section>
       <div className="mt-8 flex justify-center">
-          <a href="/oc/yzhel" target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
-            Ver ficha de personaje
-          </a>
+                    <button
+                      onClick={() => setOpenModal('yzhel')}
+                      className="cursor-pointer text-white bg-black border-[#9D50BB] border hover:bg-[#9D50BB]/50 px-4 py-2 transition-colors duration-300 inline-block"
+                    >
+                      Ver ficha de personaje
+                    </button>
+
+                    {openModal === 'yzhel' && (
+                      <OCCard oc={YzhelOC} onClose={() => setOpenModal(null)} />
+                    )}
       </div>  
     </div>
   );

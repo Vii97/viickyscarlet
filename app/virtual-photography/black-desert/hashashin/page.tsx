@@ -1,38 +1,43 @@
+"use client"
 import FadeInSection from "@/app/components/FadeInSection";
 import { ArtGallery } from "@/app/components/ArtGallery";
 import Image from "next/image"; 
+import { useState } from "react";
+import { OCCard } from "@/app/components/OCCard";
+import AnubisBDOOC from "@/app/data/AnubisBDOOC";
 
 export const screenshotAnubis = [
-    { id: 1, src: "https://pbs.twimg.com/media/GQoHlSsXoAA1Cdt?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 2, src: "https://pbs.twimg.com/media/GcEUWTxWEAEDZ93?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 3, src: "https://pbs.twimg.com/media/Gc4dbzTWwAAiAsP?format=jpg&name=large", alt: "Anubis" },
-    { id: 4, src: "https://pbs.twimg.com/media/Gc4dj6BWYAA27Xv?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 5, src: "https://pbs.twimg.com/media/GQOid-uXUAAUzvu?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 6, src: "https://pbs.twimg.com/media/GSslsfOXQAAheer?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 7, src: "https://pbs.twimg.com/media/Guoh_g1XwAAemBo?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 8, src: "https://pbs.twimg.com/media/F3VJ3-UWUAIwGai?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 9, src: "https://pbs.twimg.com/media/HDJiT_gaUAAgdqw?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 10, src: "https://pbs.twimg.com/media/F3VJ6uTXAAEcx_T?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 11, src: "https://pbs.twimg.com/media/Gt2dIRYXkAAV4vA?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 12, src: "https://pbs.twimg.com/media/GoKFDuXXUAAwI4L?format=jpg&name=large", alt: "Anubis" },
-    { id: 13, src: "https://pbs.twimg.com/media/GcN6N1bWUAAsMDa?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 14, src: "https://pbs.twimg.com/media/GOTUwheXIAAWCrg?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 15, src: "https://pbs.twimg.com/media/GMIyzDGWQAAZMnS?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 16, src: "https://pbs.twimg.com/media/Gtb1YNbWsAAFDFK?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 17, src: "https://pbs.twimg.com/media/GQ8T5CnXoAAszpg?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 18, src: "https://pbs.twimg.com/media/GQ8TyhPWsAABb-J?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 19, src: "https://pbs.twimg.com/media/GrAinTLX0AA6bU5?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 20, src: "https://pbs.twimg.com/media/Gci9jZuW8AA_WX5?format=jpg&name=large", alt: "Anubis" },
-    { id: 21, src: "https://pbs.twimg.com/media/GLQRWM7W0AA7EeN?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 22, src: "https://pbs.twimg.com/media/GUqNeCwWEAABRHf?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 23, src: "https://pbs.twimg.com/media/GYWvUvfWoAAp1kW?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 24, src: "https://pbs.twimg.com/media/GljBEajXUAASY9X?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 25, src: "https://pbs.twimg.com/media/GljBAnEW4AAsShB?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 26, src: "https://pbs.twimg.com/media/GLQTmHJWAAA1mW2?format=jpg&name=4096x4096", alt: "Anubis" },
-    { id: 27, src: "https://pbs.twimg.com/media/GgzU42MXMAAUgVV?format=jpg&name=4096x4096", alt: "Anubis" },
+    { id: 1, src: "https://pbs.twimg.com/media/GQoHlSsXoAA1Cdt?format=jpg&name=medium", alt: "Anubis" },
+    { id: 2, src: "https://pbs.twimg.com/media/GcEUWTxWEAEDZ93?format=jpg&name=medium", alt: "Anubis" },
+    { id: 3, src: "https://pbs.twimg.com/media/Gc4dbzTWwAAiAsP?format=jpg&name=medium", alt: "Anubis" },
+    { id: 4, src: "https://pbs.twimg.com/media/Gc4dj6BWYAA27Xv?format=jpg&name=medium", alt: "Anubis" },
+    { id: 5, src: "https://pbs.twimg.com/media/GQOid-uXUAAUzvu?format=jpg&name=medium", alt: "Anubis" },
+    { id: 6, src: "https://pbs.twimg.com/media/GSslsfOXQAAheer?format=jpg&name=medium", alt: "Anubis" },
+    { id: 7, src: "https://pbs.twimg.com/media/Guoh_g1XwAAemBo?format=jpg&name=medium", alt: "Anubis" },
+    { id: 8, src: "https://pbs.twimg.com/media/F3VJ3-UWUAIwGai?format=jpg&name=medium", alt: "Anubis" },
+    { id: 9, src: "https://pbs.twimg.com/media/HDJiT_gaUAAgdqw?format=jpg&name=medium", alt: "Anubis" },
+    { id: 10, src: "https://pbs.twimg.com/media/F3VJ6uTXAAEcx_T?format=jpg&name=medium", alt: "Anubis" },
+    { id: 11, src: "https://pbs.twimg.com/media/Gt2dIRYXkAAV4vA?format=jpg&name=medium", alt: "Anubis" },
+    { id: 12, src: "https://pbs.twimg.com/media/GoKFDuXXUAAwI4L?format=jpg&name=medium", alt: "Anubis" },
+    { id: 13, src: "https://pbs.twimg.com/media/GcN6N1bWUAAsMDa?format=jpg&name=medium", alt: "Anubis" },
+    { id: 14, src: "https://pbs.twimg.com/media/GOTUwheXIAAWCrg?format=jpg&name=medium", alt: "Anubis" },
+    { id: 15, src: "https://pbs.twimg.com/media/GMIyzDGWQAAZMnS?format=jpg&name=medium", alt: "Anubis" },
+    { id: 16, src: "https://pbs.twimg.com/media/Gtb1YNbWsAAFDFK?format=jpg&name=medium", alt: "Anubis" },
+    { id: 17, src: "https://pbs.twimg.com/media/GQ8T5CnXoAAszpg?format=jpg&name=medium", alt: "Anubis" },
+    { id: 18, src: "https://pbs.twimg.com/media/GQ8TyhPWsAABb-J?format=jpg&name=medium", alt: "Anubis" },
+    { id: 19, src: "https://pbs.twimg.com/media/GrAinTLX0AA6bU5?format=jpg&name=medium", alt: "Anubis" },
+    { id: 20, src: "https://pbs.twimg.com/media/Gci9jZuW8AA_WX5?format=jpg&name=medium", alt: "Anubis" },
+    { id: 21, src: "https://pbs.twimg.com/media/GLQRWM7W0AA7EeN?format=jpg&name=medium", alt: "Anubis" },
+    { id: 22, src: "https://pbs.twimg.com/media/GUqNeCwWEAABRHf?format=jpg&name=medium", alt: "Anubis" },
+    { id: 23, src: "https://pbs.twimg.com/media/GYWvUvfWoAAp1kW?format=jpg&name=medium", alt: "Anubis" },
+    { id: 24, src: "https://pbs.twimg.com/media/GljBEajXUAASY9X?format=jpg&name=medium", alt: "Anubis" },
+    { id: 25, src: "https://pbs.twimg.com/media/GljBAnEW4AAsShB?format=jpg&name=medium", alt: "Anubis" },
+    { id: 26, src: "https://pbs.twimg.com/media/GLQTmHJWAAA1mW2?format=jpg&name=medium", alt: "Anubis" },
+    { id: 27, src: "https://pbs.twimg.com/media/GgzU42MXMAAUgVV?format=jpg&name=medium", alt: "Anubis" },
 ];
 
 export default function Hashashin() {
+const [openModal, setOpenModal] = useState<string | null>(null);
     return (
         <div className="min-h-screen">
             <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-25">
@@ -57,9 +62,16 @@ export default function Hashashin() {
                 </div>
             </section>
             <div className="mt-8 flex justify-center">
-            <a href="/oc/anubis-bdo" target="_blank" rel="noopener noreferrer" className="text-white bg-black hover:bg-[#9D50BB]/70 px-4 py-2 transition-colors duration-300 inline-block ">
-              Ver ficha de personaje
-            </a>
+                    <button
+                      onClick={() => setOpenModal('anubisBDO')}
+                      className="cursor-pointer text-white bg-black border-[#9D50BB] border hover:bg-[#9D50BB]/50 px-4 py-2 transition-colors duration-300 inline-block"
+                    >
+                      Ver ficha de personaje
+                    </button>
+
+                    {openModal === 'anubisBDO' && (
+                      <OCCard oc={AnubisBDOOC} onClose={() => setOpenModal(null)} />
+                    )}
             </div> 
         </div>
     );

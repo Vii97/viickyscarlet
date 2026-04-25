@@ -8,13 +8,13 @@ import Link from "next/link";
 import FadeInSection from "./components/FadeInSection";
 
 const images = [
-  "/home/hero_link.jpg",
-  "/home/hero_art_ocs.jpg",
-  "/home/hero_sonic.jpg",
-  "/home/hero_wwm_pic.jpg",
-  "/home/hero_art_ororon.jpg",
-  "/home/hero_wwm.jpg",
-  "/home/hero_bdo_slide.jpg",
+  "/home/hero_link.webp",
+  "/home/hero_art_ocs.webp",
+  "/home/hero_sonic.webp",
+  "/home/hero_wwm_pic.webp",
+  "/home/hero_art_ororon.webp",
+  "/home/hero_wwm.webp",
+  "/home/hero_bdo_slide.webp",
 ];
 
 const creatives = [
@@ -49,28 +49,28 @@ const creatives = [
 
 
 const cosplayCards = [ 
-      { label: "Eru", href: "/cosplay/eru", image: "/menu/cosplay/archer.jpg" },
-      { label: "Sova", href: "/cosplay/sova", image: "/menu/cosplay/sova.jpg" },
-      { label: "Ezreal", href: "/cosplay/ezreal", image: "/menu/cosplay/ezreal.jpg" },
-      { label: "Link", href: "/cosplay/link", image: "/menu/cosplay/link.jpg" },
-      { label: "Sonic", href: "/cosplay/sonic", image: "/menu/cosplay/sonic.jpg" },
-      { label: "Silk", href: "/cosplay/silk", image: "/menu/cosplay/silk.jpg" },
-      { label: "Akali", href: "/cosplay/akali", image: "/menu/cosplay/akali.jpg" },
-      {label: "- Otros -", href: "/cosplay/juvia", image: "/menu/cosplay/juvia.jpg" }
+      { label: "Eru", href: "/cosplay/eru", image: "/menu/cosplay/archer.webp" },
+      { label: "Sova", href: "/cosplay/sova", image: "/menu/cosplay/sova.webp" },
+      { label: "Ezreal", href: "/cosplay/ezreal", image: "/menu/cosplay/ezreal.webp" },
+      { label: "Link", href: "/cosplay/link", image: "/menu/cosplay/link.webp" },
+      { label: "Sonic", href: "/cosplay/sonic", image: "/menu/cosplay/sonic.webp" },
+      { label: "Silk", href: "/cosplay/silk", image: "/menu/cosplay/silk.webp" },
+      { label: "Akali", href: "/cosplay/akali", image: "/menu/cosplay/akali.webp" },
+      {label: "- Otros -", href: "/cosplay/otros", image: "/menu/cosplay/juvia.webp" }
     ]
 
 const artCards = [
-      { label: "Black Desert", href: "/art/black-desert", image: "/menu/art/black-desert.jpg" },
-      { label: "Valorant", href: "/art/valorant", image: "/menu/art/sova.jpg" },
-      { label: "League Of Legends", href: "/art/league-oflegends", image: "/menu/art/lol.jpg" },
-      { label: "Sonic The Hedgehog", href: "/art/sonic-the-hedgehog", image: "/menu/art/sonic.jpg" },
-      { label: "Yzhel", href: "/art/yzhel", image: "/menu/art/yzhel.jpg" },
-      { label: "- Otros -", href: "/art/otros", image: "/menu/art/zelda.jpg" }
+      { label: "Black Desert", href: "/art/black-desert", image: "/menu/art/black-desert.webp" },
+      { label: "Valorant", href: "/art/valorant", image: "/menu/art/sova.webp" },
+      { label: "League Of Legends", href: "/art/league-of-legends", image: "/menu/art/lol.webp" },
+      { label: "Sonic The Hedgehog", href: "/art/sonic-the-hedgehog", image: "/menu/art/sonic.webp" },
+      { label: "Yzhel", href: "/art/yzhel", image: "/menu/art/yzhel.webp" },
+      { label: "- Otros -", href: "/art/otros", image: "/menu/art/zelda.webp" }
 ]
 
 const virtualPhotographyCards = [
-      { label: "Black Desert", href: "/virtual-photography/black-desert", image: "/menu/photography/bdo.JPG" },
-      { label: "Where Winds Meet", href: "/virtual-photography/where-winds-meet", image: "/menu/photography/wwm.png" },
+      { label: "Black Desert", href: "/virtual-photography/black-desert", image: "/menu/photography/bdo.webp" },
+      { label: "Where Winds Meet", href: "/virtual-photography/where-winds-meet", image: "/menu/photography/wwm.webp" },
 ]
 
 export default function Home() {
@@ -112,7 +112,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="max-w-4xl"
           >
-            <h1 className="text-7xl md:text-[12rem] pb-5 md:p-0 text-white uppercase tracking-tighter leading-[0.9]">
+            <h1 className="text-7xl md:text-[12rem] pb-16 md:p-0 text-white uppercase tracking-tighter leading-[0.9]">
               VIICKY SCARLET
             </h1>
           </motion.div>
@@ -171,11 +171,11 @@ export default function Home() {
                   />
                 </span>
 
-                <div className="flex flex-col items-center md:items-start px-6">
-                  <h3 className="title text-2xl md:text-3xl font-light mb-3 group-hover:text-white/90 transition-colors">
+                <div className="flex flex-col text-center px-6">
+                  <h3 className="title text-2xl md:text-3xl md:text-start font-light mb-3 group-hover:text-white/90 transition-colors">
                     {creative.title}
                   </h3>
-                  <p className="text-white/90 text-balanced leading-relaxed">
+                  <p className="text-white/90 text-start leading-relaxed">
                     {creative.description}
                   </p>
                 </div>
@@ -209,7 +209,7 @@ export default function Home() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <Link href={character.href} className="group flex flex-col gap-1 sm:gap-3">
-                <div className="relative aspect-[3/4] overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-purple-500/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]">
+                <div className="relative aspect-3/4 overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-purple-500/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]">
                   <Image
                     src={character.image}
                     alt={character.label}
@@ -251,7 +251,7 @@ export default function Home() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <Link href={character.href} className="group flex flex-col gap-2 sm:gap-3">
-                <div className="relative aspect-[3/4] overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-purple-500/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]">
+                <div className="relative aspect-3/4 overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-purple-500/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]">
                   <Image
                     src={character.image}
                     alt={character.label}
@@ -293,7 +293,7 @@ export default function Home() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <Link href={character.href} className="group flex flex-col gap-2 sm:gap-6">
-                <div className="relative aspect-[16/9] overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-purple-500/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]">
+                <div className="relative aspect-video overflow-hidden border border-white/10 transition-all duration-500 group-hover:border-purple-500/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]">
                   <Image
                     src={character.image}
                     alt={character.label}

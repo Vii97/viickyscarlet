@@ -5,42 +5,42 @@ import { ArtGallery } from "@/app/components/ArtGallery";
 export const artSonic = [
     {
         id: 1,
-        src: "https://pbs.twimg.com/media/EElqqa5WkAAul1K?format=jpg&name=4096x4096",
+        src: "https://pbs.twimg.com/media/EElqqa5WkAAul1K?format=jpg&name=medium",
         alt: "sonic megadrive",
     },
     {
         id: 2,
-        src: "https://pbs.twimg.com/media/DmbS2BEW4AEfEIt?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/DmbS2BEW4AEfEIt?format=jpg&name=medium",   
         alt: "sonic mania emerald",
     },
     {
         id: 3,
-        src: "https://pbs.twimg.com/media/D4IIS0JWAAApq2R?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/D4IIS0JWAAApq2R?format=jpg&name=medium",   
         alt: "sonic mania poster",
     },
         {
         id: 4,
-        src: "https://pbs.twimg.com/media/Eazpv7eWoAADwjs?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/Eazpv7eWoAADwjs?format=jpg&name=medium",   
         alt: "sonic mania cap",
     },
     {
         id: 5,
-        src: "https://pbs.twimg.com/media/EdNr3p6XoAAhQWa?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/EdNr3p6XoAAhQWa?format=jpg&name=medium",   
         alt: "sonic friends",
     },
     {
         id: 6,
-        src: "https://pbs.twimg.com/media/FRWhb53XEAANFjN?format=jpg&name=4096x4096",   
+        src: "https://pbs.twimg.com/media/FRWhb53XEAANFjN?format=jpg&name=medium",   
         alt: "kunckles",
     },
     {
         id: 7,
-        src: "https://pbs.twimg.com/media/DsXoiFoXgAE_jFV?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/DsXoiFoXgAE_jFV?format=jpg&name=medium",   
         alt: "wereheog",
     },
     {
         id: 8,
-        src: "https://pbs.twimg.com/media/DrzqT1EX4AEsuaD?format=jpg&name=large",   
+        src: "https://pbs.twimg.com/media/DrzqT1EX4AEsuaD?format=jpg&name=medium",   
         alt: "supersonic",
     }
 ]

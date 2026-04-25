@@ -3,14 +3,14 @@ import { ArtGallery } from "@/app/components/ArtGallery";
 import Image from "next/image";
 
 export const screenshotRan = [
-    { id: 1, src: "https://pbs.twimg.com/media/Gx9VoJKWUAA0nc9?format=jpg&name=4096x4096", alt: "Ran" },
-    { id: 2, src: "https://pbs.twimg.com/media/GnUuDnlW4AAqnmU?format=jpg&name=4096x4096", alt: "Ran" },
-    { id: 3, src: "https://pbs.twimg.com/media/Gx2HiOiXgAEnBxz?format=jpg&name=4096x4096", alt: "Ran" },
-    { id: 4, src: "https://pbs.twimg.com/media/GyLYaWSXcAE19rw?format=jpg&name=4096x4096", alt: "Ran" },
-    { id: 5, src: "https://pbs.twimg.com/media/G27qqAXWgAAsExK?format=jpg&name=4096x4096", alt: "Ran" },
-    { id: 6, src: "https://pbs.twimg.com/media/GSFKtOEW0AEUrqj?format=jpg&name=4096x4096", alt: "Ran" },
-    { id: 7, src: "https://pbs.twimg.com/media/GRmZlQTWwAAcLhq?format=jpg&name=4096x4096", alt: "Ran" },
-    { id: 8, src: "https://pbs.twimg.com/media/GSUknXuW0AAH49Q?format=jpg&name=large", alt: "Ran" },
+    { id: 1, src: "https://pbs.twimg.com/media/Gx9VoJKWUAA0nc9?format=jpg&name=medium", alt: "Ran" },
+    { id: 2, src: "https://pbs.twimg.com/media/GnUuDnlW4AAqnmU?format=jpg&name=medium", alt: "Ran" },
+    { id: 3, src: "https://pbs.twimg.com/media/Gx2HiOiXgAEnBxz?format=jpg&name=medium", alt: "Ran" },
+    { id: 4, src: "https://pbs.twimg.com/media/GyLYaWSXcAE19rw?format=jpg&name=medium", alt: "Ran" },
+    { id: 5, src: "https://pbs.twimg.com/media/G27qqAXWgAAsExK?format=jpg&name=medium", alt: "Ran" },
+    { id: 6, src: "https://pbs.twimg.com/media/GSFKtOEW0AEUrqj?format=jpg&name=medium", alt: "Ran" },
+    { id: 7, src: "https://pbs.twimg.com/media/GRmZlQTWwAAcLhq?format=jpg&name=medium", alt: "Ran" },
+    { id: 8, src: "https://pbs.twimg.com/media/GSUknXuW0AAH49Q?format=jpg&name=medium", alt: "Ran" },
 ];
 
 export default function Dosa() {
