@@ -9,12 +9,13 @@ export const Akame = {
     race: "Humana",
     country: "Seúl, Tierra del Alba Radiante",
     combat: [
-        "⚔️ Tiene mucha experiencia en combate, especialmente contra monstruos y demonios o youkais. Lleva ropa ligera sin protección, sin embargo, se mueve rápido valiéndose de las artes marciales, como si sus movimientos fuesen una danza elegante pero letal.",
+        "SANGFANJES ⚔️ | PÉNDULO ANCESTRAL | ESPADA CEREMONIAL",
+        "Tiene mucha experiencia en combate, especialmente contra monstruos y demonios o youkais. Lleva ropa ligera sin protección, sin embargo, se mueve rápido valiéndose de las artes marciales, como si sus movimientos fuesen una danza elegante pero letal.",
         "Suele usar su espada Guesshoku (Eclipse de luna - 月食) unida a su péndulo astral, que cuenta con un incensario que desprende un humo escarlata que huele a orquídea, bueno para la meditación, pero molesto para los seres de la oscuridad.",
         "A veces se apoya con pequeños papiros con dibujos y caligrafía en tinta china que sirven de talismanes. Cuando el peligro es mayor, desengancha dos cariocas de cuchillas, las sangfanjes, imbuidas por magia espiritual.",
         "Después de que se rompieran sus sangfanjes originales, Luth le regaló unas nuevas diseñadas por ella: de acero de Valtarra fundido con lapislázuli, muy resistentes."
     ],
-    job: "Sacerdotisa 📿⛩️",
+    job: "Sacerdotisa ⛩️",
     personality: [
         "Suele ser serena y amable usando las formas sociales típicas de su región como reverencias o inclinaciones de cabeza. Aunque algo introvertida para convenciones sociales, cuando habla lo hace en serio.",
         "Se muestra como un apoyo incondicional cuando la situación trata de pelear contra demonios, bandidos, o algún asunto importante en la capital de la Tierra del Alba Radiante.",

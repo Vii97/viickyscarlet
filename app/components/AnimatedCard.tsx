@@ -50,7 +50,7 @@ export const AnimatedCard = ({ image, onClick, onLoad }: AnimatedCardProps) => {
         }`}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
-      {image.title && <h2 className="subtitle text-center text-lg md:text-3xl py-4 border-t border-zinc-800">{image.title}</h2>}
+      {image.title && <h2 className="subtitle text-center text-md md:text-3xl py-4 border-t border-zinc-800">{image.title}</h2>}
     </div>
     </motion.div>
   );

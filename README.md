@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VIICKY SCARLET OFFICIAL WEBSITE 🥑
+A project just for share my hobbies and art in a good-looking website
 
-## Getting Started
+## STACK 🖥️
+* Next.js
+* Typescript
+* HTML
+* CSS
+* Tailwind CSS
 
-First, run the development server:
+## LIBRARIES 🚹
+* Lucide React for icons
+* Framer Motion for animations
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## DESIGN 🎨
+* Clip Studio Paint 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## GALLERIES 🏙️
+* Images from my Twitter accounts (X) and Black Desert website.
+ - @ViickyScarlet
+ - @EUSonicOfHyrule
+ - EruScarlet in BDO forum
+* Some videos are iframes from YouTube with its no-cookie version. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## DEPLOY 💻
+The deploy of this project is in Cloudfare Pages.
+Also I use Vercel for som tests
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## PATCHS 🆕
 
-## Learn More
+### V0
+- First deploy and settings in Cloudfare
+- No cookie version for YouTube iframes
+- Images in Public are now .webp format
+- I reduced the image quality for better performance, but 60 static pics are still 60 pics...
+- Modal for OC sheets
+- New texts and completed sections
+- New Privacy Policy
+- Some design adjustments for Cosplay Section
+- New pics in Virtual Photography (Black Desert>Archer and Where Winds Meet)
+- Allowed Cloudfare stadistics
 
-To learn more about Next.js, take a look at the following resources:
+### V1
+- Text adjustments
+- New pics in Cosplay>Akali
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

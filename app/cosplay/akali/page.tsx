@@ -84,6 +84,16 @@ export const cosplayAkali = [
         src: "https://pbs.twimg.com/media/FnpcTt5XwAAMFDJ?format=jpg&name=medium",   
         alt: "allout",
     },
+    {
+        id: 17,
+        src: "https://pbs.twimg.com/media/FPvuBI1VsAYqwvU?format=jpg&name=medium",   
+        alt: "allout",
+    },
+     {
+        id: 18,
+        src: "https://pbs.twimg.com/media/HG17ivba4AES91g?format=jpg&name=medium",   
+        alt: "allout",
+    },   
 ]
 
 export const texts = {

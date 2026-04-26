@@ -9,7 +9,8 @@ export const AnubisBDOOC = {
     race: "Humano Semichacal",
     country: "Ciudad de Valencia, Valencia",
     combat: [
-        "🗡️ Si liarse a puñetazos en las calles de la ciudad del desierto lo llamas saber combatir… Nunca ha entrenado para pelear, hace lo primero que se le ocurre, pero es ágil (sobre todo esquiva MUY bien los golpes a la cara).",
+        "SHAMSIR | SIGILO | ¿LICANTROPÍA? 🌙",
+        "Si liarse a puñetazos en las calles de la ciudad del desierto lo llamas saber combatir… Nunca ha entrenado para pelear, hace lo primero que se le ocurre, pero es ágil (sobre todo esquiva MUY bien los golpes a la cara).",
         "Desde hace unos años lleva con él un shamsir que tiene el poder de invocar ráfagas de aire y tornados. No está afilado. No lo sabe usar. Lo más seguro es que él salga volando por los aires.",
         "En las noches de Luna Llena le crecen las uñas y los colmillos, y le sale una larga cola y orejas de chacal negro. La temperatura de su cuerpo aumenta y le aumenta la velocidad y la fuerza, pudiendo pelear usando las garras."
     ],

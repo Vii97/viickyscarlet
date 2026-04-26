@@ -9,7 +9,8 @@ export const AnubisWWMOC = {
     race: "Bànchái",
     country: "Hexi",
     combat: [
-        "🗡️ El jianghu es demasiado peligroso como para no ir bien preparado. Se quedó con la espada de su madre, la cual le defiende de los peligros y duelos en los que se mete.",
+        "ESPADA 🗡️ | ARCO 🏹 | DARDO 📿 ",
+        "El jianghu es demasiado peligroso como para no ir bien preparado. Se quedó con la espada de su madre, la cual le defiende de los peligros y duelos en los que se mete.",
         "Aunque, a decir verdad, tiene un talento natural para el arco, que suele reservar para la caza, así como sus dagas y cuchillos, pero más de una vez le ha salvado la vida ¡literalmente!",
         "Por último, completa su arsenal con algo más: un dardo unido a una cadena, que lo usa para colgarse e impulsarse por encima de los tejados o de los árboles."
     ],

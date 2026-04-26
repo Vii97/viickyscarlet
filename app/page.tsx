@@ -23,14 +23,14 @@ const creatives = [
     icon: "/home/icon1_cosplay.webp",
     title: "Cosplay",
     description:
-      "Llevo 10 años haciendo cosplay por mi cuenta, un hobby que me ha dado la oportunidad de llevar al mundo real mis personajes de ficción más queridos. Para mí el cosplay son homenajes a esos videojuegos, series, cómics y libros que de alguna manera han sido importantes en mi vida. Gracias al cosplay he conocido a muchas personas y he podido incluso participar en proyectos y eventos grandes. Además, he podido organizar pequeñas actuaciones, haciendo regresar a esa pequeña Viicky que siempre le gustó interpretar un papel de teatro.",
+      "Llevo 10 años haciendo cosplay por mi cuenta, un hobby que me ha dado la oportunidad de llevar al mundo real mis personajes de ficción más queridos. Para mí el cosplay son homenajes a esos videojuegos, series, cómics y libros que de alguna manera han sido importantes en mi vida. Gracias al cosplay he conocido a muchas personas y he logrado incluso participar en proyectos y eventos grandes. Además, he podido organizar pequeñas actuaciones, haciendo regresar a esa pequeña Viicky que siempre le gustó interpretar un papel de teatro.",
   },
   {
     id:2,
     icon: "/home/icon2_art.webp",
     title: "Dibujo digital",
     description:
-      "Desde pequeña siempre me encantó dibujar, y más cuando descubrí el anime de Inuyasha y el manga en general. He ido aprendiendo un montón a lo largo de los años ¡y sobre todo no paro de practicar! Sobre todo, estoy más enfocada últimamente en dibujar a mis OCs y personajes de rol, pero también tengo un estilo más cartoon o chibis. A pesar de haber dibujado para algún particular o streamer, yo me lo tomo como una especie de “terapia” que me relaja, me anima y me ayuda a expresarme. Sinceramente espero que os gusten y lleguen al corazón de alguna manera.",
+      "Desde pequeña siempre me encantó dibujar, y más cuando descubrí el anime de Inuyasha y el manga en general. He ido aprendiendo un montón a lo largo de los años ¡y no paro de practicar! Sobre todo, estoy más enfocada últimamente en dibujar a mis OCs y personajes de rol, pero también tengo un estilo más cartoon o chibis. A pesar de haber dibujado para algún particular o streamer, yo me lo tomo como una especie de “terapia” que me relaja, me anima y me ayuda a expresarme. Sinceramente espero que os gusten y lleguen al corazón de alguna manera.",
   },
   { id: 3,
     icon: "/home/icon3_photo.webp",
@@ -136,7 +136,7 @@ export default function Home() {
         <FadeInSection delay={0.2}>
           <div className="grid md:grid-cols-2 gap-8 text-white/90 text-base md:text-lg leading-relaxed">
             <p>
-              ¡Bienvenid@ a mi rincón feliz! Soy Viicky, desarrolladora web, artista y cosplayer. Me encanta el arte, la informática… ¡y los videojuegos y series! Después de tantos años creando, he decidido abrir mi propia página web con todo tipo de imágenes y comentarios de algunos de mis proyectos más destacados, incluidos mis personajes originales con las que llevo explorando historias a través de relatos cortos y el rol. Porque sí, crear me ayuda a sanar, a cuidarme. 
+              ¡Bienvenid@ a mi rincón feliz! Soy Viicky, desarrolladora web, artista y cosplayer. Me encanta el arte, la informática… ¡y los videojuegos y series! Después de tantos años creando, he decidido abrir mi propia página web con todo tipo de imágenes y comentarios de algunos de mis proyectos más destacados, incluidos mis personajes originales con los que llevo explorando historias a través de relatos cortos y el rol. Porque sí, crear me ayuda a sanar, a cuidarme. 
             </p>
             <p>
             El hacer cosplay, dibujar personajes, escribir historias o incluso fotografiar en entornos virtuales es una forma de expresarme muy especial. En Internet, un entorno digital saturado de estímulos efímeros, entiendo el proceso creativo como una herramienta de bienestar y sanación, con la que busco transmitir un mensaje auténtico y conectar de forma significativa con los demás.            </p>

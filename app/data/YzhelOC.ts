@@ -9,6 +9,7 @@ export const YzhelOC = {
     race: "Humano con Quirk",
     country: "Finlandia",
     combat: [
+        "VIENTO 🌬️",
         "Escucha del viento (Tuulen Kuuntelua). El aire nos ha acompañado toda la vida. En la familia de Yzhel, generaciones enteras han aprendido a escuchar los sonidos que trae el viento, como si este susurrara secretos del mundo. Esta leyenda familiar se mantuvo viva incluso tras la aparición de los quirks, y con el nacimiento de Yzhel, el don se manifestó de forma clara: su quirk le permite comprender y manipular el viento.",
         "Por supuesto le sería imposible crear huracanes catastróficos. El estudiante de Bellas Artes no podría levantar objetos tan pesados. Desde niño ha vivido en sintonía con esa fuerza invisible, entrenando su oído y su alma para comprenderla. Gracias a esta conexión, es capaz de modificar, intensificar o calmar las corrientes con un simple gesto o un susurro.",
         "Sin embargo, el viento tiene voluntad propia. Es una fuerza libre con personalidad y memoria, y solo responde a quienes lo entienden. Además, cuando utiliza su quirk con gran intensidad durante la noche, tatuajes de color cyan surgen por su cuerpo con motivos nórdicos. Su sudadera, un regalo de su tío, reacciona también revelando símbolos misteriosos."
