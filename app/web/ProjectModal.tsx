@@ -45,7 +45,7 @@ export default function ProjectModal({
 
   return (
     <motion.div
-      className="fixed inset-0 z-[9996] flex items-center justify-center p-6"
+      className="fixed inset-0 z-[9996] flex items-center justify-center p-4 sm:p-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -55,7 +55,7 @@ export default function ProjectModal({
       <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" />
 
       <motion.div
-        className="relative z-10 w-full max-w-5xl"
+        className="relative z-10 w-full max-w-5xl max-h-[90vh] overflow-auto"
         initial={{ scale: 0.9, y: 24 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 24, opacity: 0 }}
@@ -66,17 +66,17 @@ export default function ProjectModal({
           {/* Content */}
           <div className="bg-[#0D0D0D]">
             {project.url ? (
-              <div className="w-full overflow-hidden" style={{ height: 540 }}>
+              <div className="w-full overflow-hidden h-[260px] sm:h-[540px]">
                 <iframe
                   src={project.url}
                   scrolling="no"
-                  style={{ width: "100%", height: "100%", border: "none", pointerEvents: "none" }}
+                  className="w-full h-full border-0 pointer-events-none"
                   loading="lazy"
                   title={project.title}
                 />
               </div>
             ) : (
-              <div className="flex items-center justify-center font-mono text-white/20 text-sm" style={{ height: 180 }}>
+              <div className="flex items-center justify-center font-mono text-white/20 text-sm h-[140px] sm:h-[180px]">
                 {"<WordPress />"} {"<WooCommerce />"}
               </div>
             )}

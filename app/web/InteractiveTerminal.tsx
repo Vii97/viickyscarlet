@@ -122,6 +122,7 @@ export default function InteractiveTerminal() {
 
   // Refs for values accessed inside the keydown handler (no stale closures)
   const inputRef   = useRef("");
+  const textInputEl = useRef<HTMLInputElement | null>(null);
   const histIdxRef = useRef(-1);
   const cmdHistRef = useRef<string[]>([]);
   const focusedRef = useRef(false);
@@ -143,6 +144,8 @@ export default function InteractiveTerminal() {
     _setFocused(v);
     if (v) document.body.dataset.terminalFocused = "1";
     else   delete document.body.dataset.terminalFocused;
+    if (v) setTimeout(() => textInputEl.current?.focus(), 0);
+    else textInputEl.current?.blur();
   }, []);
 
   // Boot: type each command char-by-char, then reveal its output 1s later
@@ -336,6 +339,8 @@ export default function InteractiveTerminal() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!focusedRef.current || !readyRef.current) return;
+      // if the hidden text input is focused, let it handle native input
+      if (document.activeElement === textInputEl.current) return;
       if (e.ctrlKey || e.metaKey) return;
       e.preventDefault();
 
@@ -373,6 +378,15 @@ export default function InteractiveTerminal() {
     return () => window.removeEventListener("keydown", onKey);
   }, [processCommand, setFocused]);
 
+  // sync mobile/virtual keyboard input via a hidden input
+  useEffect(() => {
+    if (!textInputEl.current) return;
+    const el = textInputEl.current;
+    const onBlur = () => setFocused(false);
+    el.addEventListener("blur", onBlur);
+    return () => el.removeEventListener("blur", onBlur);
+  }, [setFocused]);
+
   //   Color helper                     
 
   const tc = (c?: Extract<OutputLine, { t: "text" }>["color"]) => {
@@ -392,6 +406,17 @@ export default function InteractiveTerminal() {
       style={{ border: `1px solid ${focused ? "rgba(157,80,187,0.5)" : "rgba(255,255,255,0.1)"}` }}
       onClick={() => setFocused(true)}
     >
+      {/* Hidden native input to enable mobile keyboard and real text input */}
+      <input
+        ref={textInputEl}
+        value={input}
+        onChange={e => setInput(e.target.value)}
+        onKeyDown={e => {
+          if (e.key === "Enter") { e.preventDefault(); processCommand(inputRef.current); }
+        }}
+        aria-hidden={true}
+        className="absolute opacity-0 top-0 left-0 w-6 h-6"
+      />
       {/* Chrome */}
       <div className="flex items-center gap-2 px-4 py-2.5 border-b border-white/10 bg-white/2">
         <div className="flex gap-1.5">
