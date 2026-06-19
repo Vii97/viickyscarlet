@@ -44,5 +44,12 @@ Also I use Vercel for som tests
 - Text adjustments
 - New pics in Cosplay>Akali
 
-
+### V2
+- New pics and a section under 'Other cosplays' --> Young Master (WWM)
+- New screenshots for Eru, Anubis and Where Winds Meet
+- NEW SECTION! Web Dev
+- NEW SECTION/PAGE! - CONTACT FORMS
+- Home and footer with Contact
+- SVG animations Home
+- SEO review
 
