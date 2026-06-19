@@ -218,6 +218,17 @@ export const others = [
 
 ]
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Chibis de Black Desert",
+  description:
+    "Galería de chibis y dibujo digital estilo cartoon de las clases de Black Desert por Viicky Scarlet.",
+  path: "/art/black-desert/chibis",
+  keywords: ["chibis", "Black Desert", "BDO", "dibujo digital", "Viicky Scarlet"],
+});
+
 export default function Chibis() {
 
 
@@ -228,12 +239,12 @@ export default function Chibis() {
                     <h1 className="py-8 title text-center text-balance text-6xl leading-none md:text-8xl">
                         Chibis
                     </h1>
-                    <ArtGallery imageSets={[chibis]} /> 
+                    <ArtGallery imageSets={[chibis]} altContext="Chibi de las clases de Black Desert por Viicky Scarlet" /> 
                     <div className="py-8 text-center">
                     <h2 className="subtitle text-2xl md:text-4xl mb-8">
                         Others
                     </h2>
-                    <ArtGallery imageSets={[others]} /> 
+                    <ArtGallery imageSets={[others]} altContext="Dibujo digital chibi por Viicky Scarlet" /> 
                     </div>
                 </div>
             </section>

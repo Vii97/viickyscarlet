@@ -58,7 +58,7 @@ const [openModal, setOpenModal] = useState<string | null>(null);
            <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
 
-          <ArtGallery imageSets={[screenshotAnubis]} />
+          <ArtGallery imageSets={[screenshotAnubis]} altContext="Fotografía virtual de la clase Hashashin en Black Desert por Viicky Scarlet" />
                 </div>
             </section>
             <div className="mt-8 flex justify-center">

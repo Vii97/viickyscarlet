@@ -50,7 +50,7 @@ export default function LeagueOfLegends() {
          </FadeInSection>
               
           
-          <ArtGallery imageSets={[artLOL]} />
+          <ArtGallery imageSets={[artLOL]} altContext="Fan art y dibujo digital de League of Legends por Viicky Scarlet" />
 
         </div>
       </section>

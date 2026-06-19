@@ -2,6 +2,30 @@
 import FadeInSection from "@/app/components/FadeInSection";
 import { ArtGallery } from "@/app/components/ArtGallery";
 
+
+export const wwm = [
+    {
+        id: 1,
+        src: "https://pbs.twimg.com/media/HK9od86WgAAuzIQ?format=jpg&name=4096x4096",
+        alt: "young master",
+    },
+    {
+        id: 2,
+        src: "https://pbs.twimg.com/media/HK9ohLTXkAE6BUX?format=jpg&name=4096x4096",
+        alt: "young master",
+    },
+    {
+        id: 3,
+        src: "https://pbs.twimg.com/media/HK9ooiaWoAAb4GJ?format=jpg&name=4096x4096",
+        alt: "young master",
+    },
+    {
+        id: 4,
+        src: "https://pbs.twimg.com/media/HBSak5QX0AETflN?format=jpg&name=medium",   
+        alt: "young master  ",
+    }
+]
+
 export const juvia = [
     {
         id: 1,
@@ -29,6 +53,7 @@ export const juvia = [
         alt: "juvia",
     }
 ]
+
 export const erza = [
        {
         id: 1,
@@ -92,6 +117,7 @@ export const vi = [
         alt: "vi",
     }
 ]
+
 
 export const yandere = [
     {
@@ -177,12 +203,6 @@ export const otros = [
         title: "Inuyasha"
     },
     {
-        id: 7,
-        src: "https://pbs.twimg.com/media/HBSak5QX0AETflN?format=jpg&name=medium",   
-        alt: "WWM",
-        title: "Young Master - Where Winds Meet"
-    },
-    {
         id: 8,
         src: "https://pbs.twimg.com/media/G1oOST1XcAA2x_S?format=jpg&name=medium",   
         alt: "Ororon",
@@ -193,6 +213,7 @@ export const otros = [
 export default function OtrosCosplays() {
 
   const sections = [
+    { id: "wwm", nombre: "Young Master", serie: "Where Winds Meet", data: wwm },
     { id: "juvia", nombre: "Juvia", serie: "Fairy Tail", data: juvia },
     { id: "erza", nombre: "Erza", serie: "Fairy Tail", data: erza },
     { id: "vi", nombre: "Vi", serie: "Arcane", data: vi },
@@ -251,13 +272,13 @@ export default function OtrosCosplays() {
                 <p className="mb-5 text-center text-base text-white">{sec.serie}</p>
                 <div className="mx-5 pb-6 border-t border-white/10 md:mx-16" />
                 
-                <ArtGallery imageSets={[sec.data]} />
+                <ArtGallery imageSets={[sec.data]} altContext={`Cosplay de ${sec.nombre} (${sec.serie}) por Viicky Scarlet`} />
               </div>
             </FadeInSection>
           ))}
 
           <p className="text-center mt-8 text-sm text-white/70">
-            Photo Fantasy - Dani Díaz - Gigano Regulus - Yennifer - Beeladio - Adrii - Kaoru - Midoucloud - Phoenix Orange - Jhayr Pictures
+            Stanczyk_gf_photo - Photo Fantasy - Dani Díaz - Gigano Regulus - Yennifer - Beeladio - Adrii - Kaoru - Midoucloud - Phoenix Orange - Jhayr Pictures
           </p>          
 
         </div>

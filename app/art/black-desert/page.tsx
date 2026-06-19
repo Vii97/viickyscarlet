@@ -185,7 +185,7 @@ const [openModal, setOpenModal] = useState<string | null>(null);
               <p className="text-white text-center mb-5 text-base">Archer</p>
               <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
               
-              <ArtGallery imageSets={[artBDOeru]} />
+              <ArtGallery imageSets={[artBDOeru]} altContext="Fan art de Eru (Archer) de Black Desert por Viicky Scarlet" />
               
               <div className="mt-8 flex justify-center">
                     <button
@@ -211,7 +211,7 @@ const [openModal, setOpenModal] = useState<string | null>(null);
                   <p className="text-white text-center mb-5 text-base">Ranger</p>
                   <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
                   
-                  <ArtGallery imageSets={[artBDOluth]} />
+                  <ArtGallery imageSets={[artBDOluth]} altContext="Fan art de Luth (Ranger) de Black Desert por Viicky Scarlet" />
                 </div>
               </FadeInSection>   
             </div>
@@ -224,7 +224,7 @@ const [openModal, setOpenModal] = useState<string | null>(null);
                   <p className="text-white text-center mb-5 text-base">Lahn</p>
                   <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
 
-                  <ArtGallery imageSets={[artBDOakame]} />
+                  <ArtGallery imageSets={[artBDOakame]} altContext="Fan art de Akame (Lahn) de Black Desert por Viicky Scarlet" />
                   
                   <div className="mt-8 flex justify-center">
                     <button
@@ -250,7 +250,7 @@ const [openModal, setOpenModal] = useState<string | null>(null);
               <p className="text-white text-center mb-5 text-base">Hashashin</p>
               <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
 
-              <ArtGallery imageSets={[artBDOanubis]} />
+              <ArtGallery imageSets={[artBDOanubis]} altContext="Fan art de Anubis (Hashashin) de Black Desert por Viicky Scarlet" />
 
               <div className="mt-8 flex justify-center">
                     <button

@@ -16,6 +16,17 @@ export const screenshotLuth = [
     { id: 11, src: "https://pbs.twimg.com/media/F3QxZXnWkAAw44V?format=jpg&name=4096x4096", alt: "Luth" },
 ];
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Ranger | Black Desert | Virtual Photography | Viicky Scarlet",
+  description:
+    "Fotografía virtual (screenshots) de la clase Ranger de Black Desert por Viicky Scarlet (EruScarlet / SonicOfHyrule).",
+  path: "/virtual-photography/black-desert/ranger",
+  keywords: ["Ranger", "Black Desert", "BDO", "fotografía virtual", "screenshots", "Viicky Scarlet"],
+});
+
 export default function Ranger() {
     return (
         <div className="min-h-screen">
@@ -37,7 +48,7 @@ export default function Ranger() {
            <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
 
-          <ArtGallery imageSets={[screenshotLuth]} />
+          <ArtGallery imageSets={[screenshotLuth]} altContext="Fotografía virtual de la clase Ranger en Black Desert por Viicky Scarlet" />
                 </div>
             </section>
         </div>

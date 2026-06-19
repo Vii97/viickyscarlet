@@ -108,6 +108,17 @@ export const texts = {
  }
 
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Akali | Cosplay | Viicky Scarlet",
+  description:
+    "Cosplay de Akali de League of Legends por Viicky Scarlet, en su versión K/DA. Fotos del cosplay e historia del personaje.",
+  path: "/cosplay/akali",
+  keywords: ["cosplay Akali", "K/DA", "League of Legends cosplay", "Viicky Scarlet"],
+});
+
 export default function Akali() {
     return (
     <div className="min-h-screen">
@@ -125,7 +136,7 @@ export default function Akali() {
            <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
 
-            <ArtGallery imageSets={[cosplayAkali]} />
+            <ArtGallery imageSets={[cosplayAkali]} altContext="Cosplay de Akali (K/DA) de League of Legends por Viicky Scarlet" />
 
          
           <p className="text-center mt-8 text-sm text-white/70">

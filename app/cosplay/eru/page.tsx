@@ -84,6 +84,17 @@ export const texts = {
 
 
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Archer (Eru) | Cosplay | Viicky Scarlet",
+  description:
+    "Cosplay de Archer de Black Desert por Viicky Scarlet, encarnando a su personaje Eru. Fotos del cosplay e historia del personaje.",
+  path: "/cosplay/eru",
+  keywords: ["cosplay Archer", "Black Desert cosplay", "BDO", "Viicky Scarlet"],
+});
+
 export default function Eru() {
   return (
     <div className="min-h-screen">
@@ -103,7 +114,7 @@ export default function Eru() {
               <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
           
-          <ArtGallery imageSets={[cosplayEru]} />
+          <ArtGallery imageSets={[cosplayEru]} altContext="Cosplay de Archer de Black Desert por Viicky Scarlet" />
 
           <p className="text-center mt-8 text-sm text-white/70">
             {texts.credits}

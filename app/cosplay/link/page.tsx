@@ -84,6 +84,17 @@ export const texts = {
     events: ["Primer premio Jornadas de Barajas 2019", "Primer premio Tinta Digital 2019", "Mención en Madrid Games Week 2019", "Japan Weekend Madrid 2020 (pasarela)", "Cosplay, una historia de amor, Ana Esteve Reig", "Salón del Videojuego Madrid 2025"]
     }
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Link | Cosplay | Viicky Scarlet",
+  description:
+    "Cosplay de Link de The Legend of Zelda: Breath of the Wild por Viicky Scarlet. Fotos del cosplay e historia del héroe de Hyrule.",
+  path: "/cosplay/link",
+  keywords: ["cosplay Link", "Zelda cosplay", "Breath of the Wild", "Viicky Scarlet"],
+});
+
 export default function Link() {
     return (
     <div className="min-h-screen">
@@ -103,7 +114,7 @@ export default function Link() {
               <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
 
-          <ArtGallery imageSets={[cosplayLink]} />
+          <ArtGallery imageSets={[cosplayLink]} altContext="Cosplay de Link de The Legend of Zelda: Breath of the Wild por Viicky Scarlet" />
 
          
           <p className="text-center mt-8 text-sm text-white/70">

@@ -13,12 +13,25 @@ interface ImageItem {
 
 interface ArtGalleryProps {
   imageSets: ImageItem[][];
+  /**
+   * Contexto descriptivo de la galería (p. ej. "Cosplay de Akali — League of
+   * Legends"). Se antepone al alt de cada imagen para mejorar el SEO de
+   * imágenes, conservando el detalle propio de cada foto.
+   */
+  altContext?: string;
 }
 
-export function ArtGallery({ imageSets }: ArtGalleryProps) {
-  // Combinar todos los arrays en uno
-  const allImages = imageSets.flat();
-  
+export function ArtGallery({ imageSets, altContext }: ArtGalleryProps) {
+  // Combinar todos los arrays en uno y enriquecer el texto alternativo
+  const allImages = imageSets.flat().map((image) => {
+    if (!altContext) return image;
+    const detail = image.alt?.trim();
+    return {
+      ...image,
+      alt: detail ? `${altContext} — ${detail}` : altContext,
+    };
+  });
+
   const {
     viewerOpen,
     currentImageIndex,

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 // Importamos los iconos necesarios
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { X } from "lucide-react";
 
 interface ImageViewerProps {
   isOpen: boolean;
@@ -121,7 +121,7 @@ export const ImageViewer = ({
                 className="group cursor-pointer flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition-all hover:border-[#9d50bb] hover:bg-[#9d50bb]/20 md:h-12 md:w-12"
                 aria-label="Imagen anterior"
               >
-                <ChevronLeft className="h-6 w-6 transition-transform group-hover:-translate-x-0.5" />
+                <span className="text-2xl leading-none inline-block transition-transform group-hover:-translate-x-0.5">↞</span>
               </button>
 
               {/* Contador */}
@@ -135,7 +135,7 @@ export const ImageViewer = ({
                 className="group cursor-pointer flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition-all hover:border-[#9d50bb] hover:bg-[#9d50bb]/20 md:h-12 md:w-12"
                 aria-label="Siguiente imagen"
               >
-                <ChevronRight className="h-6 w-6 transition-transform group-hover:translate-x-0.5" />
+                <span className="text-2xl leading-none inline-block transition-transform group-hover:translate-x-0.5">↠</span>
               </button>
             </div>
 

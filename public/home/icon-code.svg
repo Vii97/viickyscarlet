@@ -1,0 +1,20 @@
+<svg id="ic-code" xmlns="http://www.w3.org/2000/svg" viewBox="115 28 954 782" width="100%" height="100%" fill="none" role="img" aria-label="Codigo &lt;/&gt;" style="overflow:visible">
+  <style>
+  #ic-code *{transform-box:fill-box;transform-origin:center}
+  #ic-code .all{--amp:12.5px;--rot:0.8deg;animation:ic-code-drift 9.0s ease-in-out infinite}
+  @keyframes ic-code-drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(calc(-1*var(--amp))) rotate(var(--rot))}}
+  #ic-code .codeL{--amp:23.5px;--rot:0deg;animation:ic-code-codeL 3.8s ease-in-out 0.0s infinite}
+  @keyframes ic-code-codeL{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(calc(-1*var(--amp))) rotate(var(--rot))}}
+  #ic-code .codeM{--amp:23.5px;--rot:0deg;animation:ic-code-codeM 4.2s ease-in-out -0.7s infinite}
+  @keyframes ic-code-codeM{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(calc(-1*var(--amp))) rotate(var(--rot))}}
+  #ic-code .codeR{--amp:23.5px;--rot:0deg;animation:ic-code-codeR 4.0s ease-in-out -1.3s infinite}
+  @keyframes ic-code-codeR{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(calc(-1*var(--amp))) rotate(var(--rot))}}
+  @media (prefers-reduced-motion: reduce){#ic-code *{animation:none!important}}
+  </style>
+  <g class="all">
+      <path class="base" fill="#E6BE8A" fill-rule="evenodd" d="M353.0,720.0 L353.0,742.0 L357.0,750.0 L365.0,755.0 L825.0,755.0 L834.0,749.0 L837.0,742.0 L836.0,716.0 L831.0,710.0 L825.0,707.0 L365.0,707.0 L357.0,712.0ZM173.0,90.0 L170.0,96.0 L170.0,639.0 L173.0,645.0 L178.0,650.0 L189.0,653.0 L515.0,653.0 L516.0,691.0 L519.0,695.0 L657.0,696.0 L679.0,694.0 L680.0,653.0 L995.0,653.0 L1005.0,650.0 L1012.0,643.0 L1014.0,636.0 L1014.0,99.0 L1013.0,94.0 L1006.0,86.0 L999.0,83.0 L184.0,83.0 L177.0,86.0ZM199.0,589.0 L203.0,586.0 L985.0,586.0 L986.0,595.0 L203.0,596.0 L199.0,593.0ZM198.0,553.0 L200.0,551.0 L981.0,551.0 L985.0,554.0 L985.0,559.0 L982.0,561.0 L199.0,561.0ZM198.0,156.0 L985.0,155.0 L986.0,522.0 L984.0,524.0 L200.0,524.0 L198.0,522.0ZM949.0,112.0 L981.0,111.0 L982.0,136.0 L950.0,137.0ZM901.0,112.0 L934.0,112.0 L935.0,135.0 L933.0,137.0 L902.0,137.0Z"/>
+      <path class="codeL" fill="#E6BE8A" fill-rule="evenodd" d="M475.0,215.0 L464.0,216.0 L440.0,226.0 L439.0,228.0 L433.0,230.0 L407.0,247.0 L384.0,264.0 L355.0,292.0 L343.0,308.0 L334.0,325.0 L331.0,340.0 L334.0,358.0 L341.0,372.0 L362.0,399.0 L397.0,432.0 L421.0,449.0 L428.0,456.0 L450.0,470.0 L462.0,474.0 L477.0,473.0 L487.0,466.0 L493.0,455.0 L492.0,441.0 L483.0,422.0 L461.0,392.0 L445.0,373.0 L426.0,354.0 L413.0,344.0 L412.0,341.0 L436.0,321.0 L481.0,274.0 L495.0,253.0 L497.0,247.0 L497.0,234.0 L495.0,229.0 L485.0,218.0Z"/>
+      <path class="codeM" fill="#E6BE8A" fill-rule="evenodd" d="M636.0,242.0 L620.0,242.0 L609.0,247.0 L600.0,254.0 L582.0,272.0 L559.0,305.0 L544.0,334.0 L530.0,373.0 L528.0,375.0 L520.0,411.0 L521.0,438.0 L528.0,449.0 L536.0,456.0 L541.0,458.0 L556.0,458.0 L563.0,456.0 L575.0,449.0 L604.0,416.0 L620.0,391.0 L637.0,358.0 L637.0,355.0 L646.0,336.0 L649.0,323.0 L651.0,321.0 L651.0,316.0 L653.0,314.0 L656.0,300.0 L657.0,276.0 L653.0,257.0 L648.0,250.0Z"/>
+      <path class="codeR" fill="#E6BE8A" fill-rule="evenodd" d="M697.0,215.0 L687.0,219.0 L679.0,228.0 L679.0,231.0 L677.0,233.0 L677.0,247.0 L679.0,253.0 L694.0,276.0 L717.0,303.0 L749.0,335.0 L757.0,341.0 L757.0,345.0 L735.0,363.0 L700.0,401.0 L689.0,415.0 L677.0,435.0 L674.0,443.0 L674.0,456.0 L677.0,462.0 L688.0,472.0 L703.0,474.0 L712.0,472.0 L737.0,458.0 L747.0,449.0 L769.0,435.0 L797.0,411.0 L816.0,392.0 L830.0,373.0 L838.0,355.0 L839.0,343.0 L835.0,325.0 L826.0,308.0 L812.0,290.0 L788.0,266.0 L764.0,247.0 L733.0,226.0 L711.0,216.0Z"/>
+  </g>
+</svg>

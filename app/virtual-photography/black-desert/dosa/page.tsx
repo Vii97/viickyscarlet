@@ -13,6 +13,17 @@ export const screenshotRan = [
     { id: 8, src: "https://pbs.twimg.com/media/GSUknXuW0AAH49Q?format=jpg&name=medium", alt: "Ran" },
 ];
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Dosa | Black Desert | Virtual Photography | Viicky Scarlet",
+  description:
+    "Fotografía virtual (screenshots) de la clase Dosa de Black Desert por Viicky Scarlet (EruScarlet / SonicOfHyrule).",
+  path: "/virtual-photography/black-desert/dosa",
+  keywords: ["Dosa", "Black Desert", "BDO", "fotografía virtual", "screenshots", "Viicky Scarlet"],
+});
+
 export default function Dosa() {
     return (
         <div className="min-h-screen">
@@ -34,7 +45,7 @@ export default function Dosa() {
            <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
 
-          <ArtGallery imageSets={[screenshotRan]} />
+          <ArtGallery imageSets={[screenshotRan]} altContext="Fotografía virtual de la clase Dosa en Black Desert por Viicky Scarlet" />
                 </div>
             </section>
         </div>

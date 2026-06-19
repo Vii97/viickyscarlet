@@ -34,6 +34,17 @@ export const artValorant = [
     },
 ]
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Valorant | Art | Viicky Scarlet",
+  description:
+    "Galería de fan art y dibujo digital de Valorant por Viicky Scarlet.",
+  path: "/art/valorant",
+  keywords: ["fan art Valorant", "dibujo digital", "Viicky Scarlet"],
+});
+
 export default function Valorant() {
   return (
     <div className="min-h-screen">
@@ -46,7 +57,7 @@ export default function Valorant() {
            <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
           
-          <ArtGallery imageSets={[artValorant]} />
+          <ArtGallery imageSets={[artValorant]} altContext="Fan art y dibujo digital de Valorant por Viicky Scarlet" />
 
         </div>
       </section>

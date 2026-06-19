@@ -45,6 +45,17 @@ export const artSonic = [
     }
 ]
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Sonic | Art | Viicky Scarlet",
+  description:
+    "Galería de fan art y dibujo digital de Sonic the Hedgehog por Viicky Scarlet.",
+  path: "/art/sonic-the-hedgehog",
+  keywords: ["fan art Sonic", "Sonic the Hedgehog", "dibujo digital", "Viicky Scarlet"],
+});
+
 export default function LeagueOfLegends() {
   return (
     <div className="min-h-screen">
@@ -57,7 +68,7 @@ export default function LeagueOfLegends() {
             <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
          </FadeInSection>
           
-          <ArtGallery imageSets={[artSonic]} /> 
+          <ArtGallery imageSets={[artSonic]} altContext="Fan art y dibujo digital de Sonic the Hedgehog por Viicky Scarlet" /> 
 
         </div>
       </section>

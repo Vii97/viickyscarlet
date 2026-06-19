@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "../lib/seo";
 import SocialMediaBanner from "../components/SocialMediaBanner";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Cosplay | Viicky Scarlet",
+  description:
+    "Cosplays de Viicky Scarlet: personajes de videojuegos, anime y cómics como League of Legends, Valorant, Zelda, Sonic y Spider-Verse.",
+  path: "/cosplay",
+  keywords: ["cosplay", "cosplayer", "cosplay España", "videojuegos", "anime"],
+});
 
 const instagramIcon = (
   <svg 

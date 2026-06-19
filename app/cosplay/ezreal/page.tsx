@@ -75,6 +75,17 @@ export const texts = {
     }
 
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Ezreal | Cosplay | Viicky Scarlet",
+  description:
+    "Cosplay de Ezreal de League of Legends por Viicky Scarlet. Fotos del cosplay e historia del personaje.",
+  path: "/cosplay/ezreal",
+  keywords: ["cosplay Ezreal", "League of Legends cosplay", "Viicky Scarlet"],
+});
+
 export default function Ezreal() {
 
   
@@ -96,7 +107,7 @@ export default function Ezreal() {
               <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
 
-          <ArtGallery imageSets={[cosplayEzreal]} />
+          <ArtGallery imageSets={[cosplayEzreal]} altContext="Cosplay de Ezreal de League of Legends por Viicky Scarlet" />
 
           <p className="text-center mt-8 text-sm text-white/70">
             {texts.credits}

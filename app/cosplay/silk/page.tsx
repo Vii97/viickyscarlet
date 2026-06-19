@@ -59,6 +59,17 @@ export const texts = {
     events: ["Spider-Verse Video Cosplay Showcase - Gigano Regulus"]
 }
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Silk | Cosplay | Viicky Scarlet",
+  description:
+    "Cosplay de Silk (Cindy Moon) del Spider-Verse de Marvel por Viicky Scarlet. Fotos del cosplay e historia del personaje.",
+  path: "/cosplay/silk",
+  keywords: ["cosplay Silk", "Cindy Moon", "Spider-Verse", "Marvel cosplay", "Viicky Scarlet"],
+});
+
 export default function Silk() {
     return (
     <div className="min-h-screen">
@@ -75,7 +86,7 @@ export default function Silk() {
               <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
           
-          <ArtGallery imageSets={[cosplaySilk]} />
+          <ArtGallery imageSets={[cosplaySilk]} altContext="Cosplay de Silk (Cindy Moon) del Spider-Verse por Viicky Scarlet" />
          
           <p className="text-center mt-8 text-sm text-white/70">
             {texts.credits}

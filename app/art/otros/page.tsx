@@ -27,7 +27,24 @@ export const artOtros = [
         src: "https://pbs.twimg.com/media/HC1sXWfXgAAD5DL?format=jpg&name=medium",   
         alt: "wwm moon",
     },
+    {
+        id: 6,
+        src: "https://pbs.twimg.com/media/HI9E2gSXcAAYE--?format=jpg&name=medium",   
+        alt: "wwm hexi",
+    },
+
 ]
+
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Otros | Art | Viicky Scarlet",
+  description:
+    "Galería de otros dibujos digitales y fan art de Viicky Scarlet: ilustraciones variadas de videojuegos, anime y personajes originales.",
+  path: "/art/otros",
+  keywords: ["fan art", "dibujo digital", "ilustración", "Viicky Scarlet"],
+});
 
 export default function OtrosArts() {
   return (
@@ -41,7 +58,7 @@ export default function OtrosArts() {
            <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
          </FadeInSection>
 
-          <ArtGallery imageSets={[artOtros]} />
+          <ArtGallery imageSets={[artOtros]} altContext="Dibujo digital y fan art por Viicky Scarlet" />
 
         </div>
       </section>

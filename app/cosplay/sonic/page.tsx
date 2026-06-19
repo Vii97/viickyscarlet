@@ -96,6 +96,17 @@ export const texts = {
  }
 
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Sonic | Cosplay | Viicky Scarlet",
+  description:
+    "Cosplay de Sonic the Hedgehog por Viicky Scarlet. Fotos del cosplay e historia del erizo más rápido.",
+  path: "/cosplay/sonic",
+  keywords: ["cosplay Sonic", "Sonic the Hedgehog", "Viicky Scarlet"],
+});
+
 export default function Sonic() {
     return (
     <div className="min-h-screen">
@@ -115,7 +126,7 @@ export default function Sonic() {
            <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
 
-          <ArtGallery imageSets={[cosplaySonic]} />
+          <ArtGallery imageSets={[cosplaySonic]} altContext="Cosplay de Sonic the Hedgehog por Viicky Scarlet" />
 
          
           <p className="text-center mt-8 text-sm text-white/70">

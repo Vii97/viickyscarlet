@@ -20,31 +20,31 @@ const images = [
 const creatives = [
   {
     id:1,
-    icon: "/home/icon1_cosplay.webp",
+    icon: '/home/icon-sew.svg',
     title: "Cosplay",
     description:
       "Llevo 10 años haciendo cosplay por mi cuenta, un hobby que me ha dado la oportunidad de llevar al mundo real mis personajes de ficción más queridos. Para mí el cosplay son homenajes a esos videojuegos, series, cómics y libros que de alguna manera han sido importantes en mi vida. Gracias al cosplay he conocido a muchas personas y he logrado incluso participar en proyectos y eventos grandes. Además, he podido organizar pequeñas actuaciones, haciendo regresar a esa pequeña Viicky que siempre le gustó interpretar un papel de teatro.",
   },
   {
     id:2,
-    icon: "/home/icon2_art.webp",
+    icon: '/home/icon-draw.svg',
     title: "Dibujo digital",
     description:
       "Desde pequeña siempre me encantó dibujar, y más cuando descubrí el anime de Inuyasha y el manga en general. He ido aprendiendo un montón a lo largo de los años ¡y no paro de practicar! Sobre todo, estoy más enfocada últimamente en dibujar a mis OCs y personajes de rol, pero también tengo un estilo más cartoon o chibis. A pesar de haber dibujado para algún particular o streamer, yo me lo tomo como una especie de “terapia” que me relaja, me anima y me ayuda a expresarme. Sinceramente espero que os gusten y lleguen al corazón de alguna manera.",
   },
   { id: 3,
-    icon: "/home/icon3_photo.webp",
+    icon: '/home/icon-cam.svg',
     title: "Fotografía virtual en videojuegos",
     description:
       "Yo tampoco sabía que esto existía. Pero si os dais cuenta, los videojuegos cuidan cada vez más la ambientación, el diseño de los paisajes, los personajes, sus poses y vestimentas… Tanto que no pocos títulos tienen ya un “Modo Foto” para hacer estas capturas de pantalla o screenshots tan especiales. Cuando me di cuenta de que mucha gente hacía esto como yo, me animé compartir mis fotos… ¡y resultó que gustaron bastante en redes sociales y foros de videojuegos!",
   },
    {
     id: 4,
-    icon: "/home/icon4_daw.webp",
+    icon: '/home/icon-code.svg',
     title: "Desarrollo de aplicaciones web",
     description:
       "Soy técnica superior de Desarrollo de Aplicaciones Web, graduada en 2025 en U-Tad con diploma al mejor expediente en DAW online. Aún me siento un pollito pequeño en este basto mundo, pero sin duda estoy sacándole mucho partido y siento que puedo crear cosas que antes me parecían imposibles ¡con lo mucho que me gustan los ordenadores! Un poquito de HTML por aquí, CSS por allí, TypeScript por allá… y un toquecito de bases de datos SQL o MongoDB. No es magia, es tech ✨. Con lo que más me manejo es con Next.js, React, Node.js Express… ¡Oh! ¡Y por circunstancias de la vida Wordpress!",
-  }, 
+  },
 ];
 
 
@@ -315,6 +315,26 @@ export default function Home() {
           ))}
         </div>
       </section>   
+          {/*IFRAME DE WEB DE CONTACTO*/}
+<section className="relative flex flex-col items-center justify-center overflow-hidden pt-25 pb-5 mt-5 border-t border-white/10">
+  <a
+    href="https://viickyscarlet-contact.viickyscarlet.workers.dev/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute inset-0 z-20 flex items-center justify-center bg-black/20 "
+  >
+    <span className="text-white text-7xl tracking-wider mb-15">
+      CONTACTO
+    </span>
+  </a>
+
+  <iframe
+    src="https://viickyscarlet-contact.viickyscarlet.workers.dev/"
+    scrolling="no"
+    className="w-full h-200 border-0 pointer-events-none"
+    title="contacto"
+  />
+</section>
 
     </div>
   );

@@ -144,7 +144,7 @@ export default function BDO() {
           <p className="subtitle text-xs uppercase tracking-[0.3em] mb-6">
             — Explora...
           </p>
-          <ArtGallery imageSets={[screenshotBDO]} />
+          <ArtGallery imageSets={[screenshotBDO]} altContext="Fotografía virtual en Black Desert por Viicky Scarlet" />
       </section>
     </div>
   );

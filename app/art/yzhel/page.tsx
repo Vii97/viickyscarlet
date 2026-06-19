@@ -60,7 +60,7 @@ const [openModal, setOpenModal] = useState<string | null>(null);
           <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
          </FadeInSection>
 
-          <ArtGallery imageSets={[artYzhel]} /> 
+          <ArtGallery imageSets={[artYzhel]} altContext="Ilustración de Yzhel, personaje original (OC) de Viicky Scarlet" /> 
         </div>
       </section>
       <div className="mt-8 flex justify-center">

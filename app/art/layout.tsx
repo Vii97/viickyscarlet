@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "../lib/seo";
 import SocialMediaBanner from "../components/SocialMediaBanner";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Art | Viicky Scarlet",
+  description:
+    "Galería de dibujo digital e ilustración de Viicky Scarlet: fan art de videojuegos, personajes originales (OC), chibis y obras a color.",
+  path: "/art",
+  keywords: ["arte digital", "ilustración", "dibujo digital", "fan art", "chibis", "OC"],
+});
 
 const instagramIcon = (
   <svg 

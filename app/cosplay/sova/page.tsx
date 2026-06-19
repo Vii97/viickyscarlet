@@ -57,6 +57,17 @@ export const texts = {
     }
 
 
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Sova | Cosplay | Viicky Scarlet",
+  description:
+    "Cosplay de Sova de Valorant por Viicky Scarlet. Fotos del cosplay y experiencia en Valorant Champions.",
+  path: "/cosplay/sova",
+  keywords: ["cosplay Sova", "Valorant cosplay", "Viicky Scarlet"],
+});
+
 export default function Sova() {
     return (
     <div className="min-h-screen">
@@ -73,7 +84,7 @@ export default function Sova() {
             <div className="mx-5 md:mx-16 pb-6 border-t border-white/10" />
           </FadeInSection>
           
-          <ArtGallery imageSets={[cosplaySova]} />    
+          <ArtGallery imageSets={[cosplaySova]} altContext="Cosplay de Sova de Valorant por Viicky Scarlet" />    
          
           <p className="text-center mt-8 text-sm text-white/70">
             {texts.credits}

@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "../lib/seo";
 import SocialMediaBanner from "../components/SocialMediaBanner";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Virtual Photography | Viicky Scarlet",
+  description:
+    "Fotografía virtual (virtual photography / screenshots) de Viicky Scarlet en videojuegos como Black Desert y Where Winds Meet.",
+  path: "/virtual-photography",
+  keywords: ["fotografía virtual", "virtual photography", "screenshots", "Black Desert", "Where Winds Meet"],
+});
 
 const xIcon = (
   <svg role="img" className="h-4 w-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">

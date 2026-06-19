@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
@@ -54,10 +54,14 @@ const menuItems: MenuItem[] = [
       { label: "Where Winds Meet", href: "/virtual-photography/where-winds-meet", image: "/menu/photography/wwm.webp" },
     ]
   },
- /* {
+  {
     label: "Web Dev", 
-    href: "/webdev"
-  }*/
+    href: "/web"
+  },
+  {
+    label: "Contact", 
+    href: "https://viickyscarlet-contact.viickyscarlet.workers.dev/"
+  }
 ]
 
 
@@ -118,7 +122,7 @@ export default function NavBar() {
         )}
       </AnimatePresence>
 <header ref={navRef} className={`fixed top-0 left-0 right-0 z-50 border-b border-white/5 backdrop-blur-[2px] transition-colors duration-300 ${(openSubmenu || isMobileMenuOpen) ? "bg-black/90" : ""}`}>
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+      <div className="flex h-16 w-full items-center justify-between px-6 lg:px-12 xl:px-20">
         <Link href="/" className="text-xl font-bold tracking-tight text-white">
           <span className="text-sm opacity-30">@</span>VIICKYSCARLET
         </Link>
@@ -126,22 +130,42 @@ export default function NavBar() {
         {/* PC */}
 <nav className="hidden items-center gap-8 md:flex h-full">
   {menuItems.map((item) => {
-    // Comprobamos si este submenú específico es el que está abierto actualmente
     const isThisSubmenuOpen = openSubmenu === item.label;
+    const isExternal = item.href.startsWith("http");
 
     return (
-      <div key={item.label} className="relative h-full flex items-center">
-        <button
-          onClick={() => toggleSubmenu(item.label)}
-          className={`text-base transition-all duration-300 cursor-pointer outline-none
-            ${isThisSubmenuOpen 
-              ? "title" // Color activo 
-              : "text-white/70 hover:text-white"         
-            }
-          `}
-        >
-          {item.label}
-        </button>
+      <div key={item.label} className="relative h-full flex items-center last:border-l last:border-white/10 last:pl-8">
+        {item.submenu ? (
+          <button
+            onClick={() => toggleSubmenu(item.label)}
+            className={`text-base transition-all duration-300 cursor-pointer outline-none
+              ${isThisSubmenuOpen
+                ? "title"
+                : "text-white/70 hover:text-white"
+              }
+            `}
+          >
+            {item.label}
+          </button>
+        ) : isExternal ? (
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpenSubmenu(null)}
+            className="text-base transition-all duration-300 cursor-pointer outline-none text-white/70 hover:text-white"
+          >
+            {item.label}
+          </a>
+        ) : (
+          <Link
+            href={item.href}
+            onClick={() => setOpenSubmenu(null)}
+            className={`text-base transition-all duration-300 cursor-pointer outline-none ${isActiveLink(item.href) ? "title" : "text-white/70 hover:text-white"}`}
+          >
+            {item.label}
+          </Link>
+        )}
       </div>
     );
   })}
@@ -253,7 +277,7 @@ export default function NavBar() {
         <nav className="border-t border-white/5 px-6 py-4">
           <ul className="flex flex-col gap-1">
             {menuItems.map((item) => (
-              <li key={item.label}>
+              <li key={item.label} className="last:border-t-2 last:border-white/10 last:mt-2 last:pt-2">
                 {item.submenu ? (
                   <div>
                     <button
@@ -261,11 +285,11 @@ export default function NavBar() {
                       className="cursor-pointer flex w-full items-center justify-between px-3 py-3 text-left text-base font-medium text-white transition-colors"
                     >
                       {item.label}
-                      <ChevronDown
-                        className={`h-4 w-4 text-white/70 transition-transform duration-200 ${
+                      <span
+                        className={`text-base leading-none inline-block text-white/70 transition-transform duration-200 ${
                           openSubmenu === item.label ? "rotate-180" : ""
                         }`}
-                      />
+                      >↡</span>
                     </button>
                     <div
                       className={`overflow-hidden transition-all duration-200 ease-in-out ${

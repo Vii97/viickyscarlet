@@ -186,7 +186,7 @@ export default function OtrosOC() {
           </div>
                 <div className="mx-5 pb-6 border-t border-white/10 md:mx-16" />
                 
-                <ArtGallery imageSets={[sec.data]} />
+                <ArtGallery imageSets={[sec.data]} altContext={`Fotografía virtual de ${sec.nombre} (${sec.clase}) en Black Desert por Viicky Scarlet`} />
               </div>
             </FadeInSection>
           ))}
