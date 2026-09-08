@@ -187,6 +187,12 @@ import { ArtGallery } from "@/app/components/ArtGallery";
         alt: "Seraph",
         title: "Seraph",
     },
+    {
+        id: 32,
+        src: "https://s1.pearlcdn.com/NAEU/Upload/Community/3269f2a000a20260801195915242.png",
+        alt: "Agent",
+        title: "Agent",
+    },
 ]
 
 export const others = [

@@ -16,12 +16,14 @@ export const screenshotAkame = [
     { id: 6, src: "https://pbs.twimg.com/media/GiK8G0DXUAA_CIj?format=jpg&name=medium", alt: "Akame" },
     { id: 7, src: "https://pbs.twimg.com/media/HDkvf3PXYAEedCe?format=jpg&name=medium", alt: "Akame" },
     { id: 8, src: "https://pbs.twimg.com/media/Gd6R7EBXEAAP0A8?format=jpg&name=medium", alt: "Akame" },
-    { id: 9, src: "https://pbs.twimg.com/media/G5_hi1bWgAEIVH2?format=jpg&name=medium", alt: "Akame" },
-    { id: 10, src: "https://pbs.twimg.com/media/G5_hlKGXgAAfeHE?format=jpg&name=medium", alt: "Akame" },
-    { id: 11, src: "https://pbs.twimg.com/media/GjJFUIJXoAAdDVJ?format=jpg&name=medium", alt: "Akame" },
-    { id: 12, src: "https://pbs.twimg.com/media/F3SSwpcWIAAfusd?format=jpg&name=medium", alt: "Akame" },
-    { id: 13, src: "https://pbs.twimg.com/media/F3lJUZHbwAA6Jtw?format=jpg&name=medium", alt: "Akame" },
-    { id: 14, src: "https://pbs.twimg.com/media/F3Sbyx1WAAALKcg?format=jpg&name=medium", alt: "Akame" },
+    { id: 9, src: "https://pbs.twimg.com/media/HNszMaJXEAAol6X?format=jpg&name=medium", alt: "Akame" },
+    { id: 10, src: "https://pbs.twimg.com/media/G5_hi1bWgAEIVH2?format=jpg&name=medium", alt: "Akame" },
+    { id: 11, src: "https://pbs.twimg.com/media/G5_hi1bWgAEIVH2?format=jpg&name=medium", alt: "Akame" },
+    { id: 12, src: "https://pbs.twimg.com/media/G5_hlKGXgAAfeHE?format=jpg&name=medium", alt: "Akame" },
+    { id: 13, src: "https://pbs.twimg.com/media/GjJFUIJXoAAdDVJ?format=jpg&name=medium", alt: "Akame" },
+    { id: 14, src: "https://pbs.twimg.com/media/F3SSwpcWIAAfusd?format=jpg&name=medium", alt: "Akame" },
+    { id: 15, src: "https://pbs.twimg.com/media/F3lJUZHbwAA6Jtw?format=jpg&name=medium", alt: "Akame" },
+    { id: 16, src: "https://pbs.twimg.com/media/F3Sbyx1WAAALKcg?format=jpg&name=medium", alt: "Akame" },
 ];
 
 export default function Lahn() {

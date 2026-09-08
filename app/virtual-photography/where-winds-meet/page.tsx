@@ -13,6 +13,11 @@ export const screenshotWWM  = [
         alt: "anubis",
     },
     {
+        id: 44,
+        src: "https://pbs.twimg.com/media/HRi78QYWAAAj49o?format=jpg&name=4096x4096",
+        alt: "anubis",
+    },
+    {
         id: 2,
         src: "https://pbs.twimg.com/media/HDKrg9UXYAERi5x?format=jpg&name=large",
         alt: "anubis",
@@ -23,8 +28,23 @@ export const screenshotWWM  = [
         alt: "anubis",
     },
     {
+        id: 45,
+        src: "https://pbs.twimg.com/media/HLwT4M_XoAA4hvP?format=jpg&name=large",
+        alt: "anubis",
+    },
+    {
+        id: 46,
+        src: "https://pbs.twimg.com/media/HLwT6m6WQAAz9-z?format=jpg&name=large",
+        alt: "anubis",
+    },
+    {
         id: 4,
         src: "https://pbs.twimg.com/media/HC6-yRabMAAfQ2m?format=jpg&name=large",
+        alt: "anubis",
+    },
+    {
+        id: 47,
+        src: "https://pbs.twimg.com/media/HNILgTsW4AEBm-y?format=jpg&name=large",
         alt: "anubis",
     },
     {
@@ -133,6 +153,11 @@ export const screenshotWWM  = [
         alt: "anubis",
     },
     {
+        id: 48,
+        src: "https://pbs.twimg.com/media/HRaTI1WWQAIrRKf?format=jpg&name=4096x4096",
+        alt: "anubis",
+    },
+    {
         id: 26,
         src: "https://pbs.twimg.com/media/G_DMcrpWcAE81rO?format=jpg&name=large",
         alt: "anubis",
@@ -195,6 +220,16 @@ export const screenshotWWM  = [
     {
         id: 38,
         src: "https://pbs.twimg.com/media/G_3TPSiW8AAvvKx?format=jpg&name=large",
+        alt: "anubis",
+    },
+    {
+        id: 49,
+        src: "https://pbs.twimg.com/media/HOBmEZJWUAEuKu2?format=jpg&name=large",
+        alt: "anubis",
+    },
+    {
+        id: 50,
+        src: "https://pbs.twimg.com/media/HOvy5R-XcAAFAVJ?format=jpg&name=large",
         alt: "anubis",
     },
     {

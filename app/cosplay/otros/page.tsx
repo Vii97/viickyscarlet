@@ -23,6 +23,31 @@ export const wwm = [
         id: 4,
         src: "https://pbs.twimg.com/media/HBSak5QX0AETflN?format=jpg&name=medium",   
         alt: "young master  ",
+    },
+    {
+        id: 5,
+        src: "https://pbs.twimg.com/media/HLh8yh9WEAAiUDb?format=jpg&name=4096x4096",
+        alt: "young master",
+    },
+    {
+        id: 6,
+        src: "https://pbs.twimg.com/media/HL62brAXcAEaRzo?format=jpg&name=4096x4096",
+        alt: "young master",
+    },
+    {
+        id: 7,
+        src: "https://pbs.twimg.com/media/HRtzv1CX0AAFyza?format=jpg&name=4096x4096",
+        alt: "young master",
+    },
+    {
+        id: 8,
+        src: "https://pbs.twimg.com/media/HRtzxyeWsAEblLH?format=jpg&name=4096x4096",
+        alt: "young master",
+    },
+    {
+        id: 9,
+        src: "https://pbs.twimg.com/media/HRtz_eyXUAAuB_e?format=jpg&name=4096x4096",
+        alt: "young master",
     }
 ]
 

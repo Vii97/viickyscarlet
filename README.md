@@ -53,3 +53,5 @@ Also I use Vercel for som tests
 - SVG animations Home
 - SEO review
 
+#### v2.1
+- new content

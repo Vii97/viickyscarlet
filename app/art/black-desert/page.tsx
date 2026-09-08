@@ -124,6 +124,12 @@ export const artBDOanubis = [
         src: "https://pbs.twimg.com/media/FsPCvaaXoAUWeqm?format=jpg&name=medium",
         alt: "ears",
     },
+    {
+        id: 6,
+        src: "https://pbs.twimg.com/media/HPC1kFcWcAEHmdV?format=jpg&name=medium",
+        alt: "light and shadow",
+    },
+
 ]
 
 export default function BlackDesert() {

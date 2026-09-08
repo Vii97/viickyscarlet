@@ -69,7 +69,7 @@ export const metadata: Metadata = {
         url: SITE.ogImage,
         width: 3878,
         height: 2304,
-        alt: "Viicky Scarlet — cosplay, arte digital y fotografía virtual",
+        alt: "Viicky Scarlet | cosplay, arte digital y desarrollo web",
       },
     ],
     locale: SITE.locale,

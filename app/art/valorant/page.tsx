@@ -4,31 +4,41 @@ import { ArtGallery } from "@/app/components/ArtGallery";
 export const artValorant = [
     {
         id: 1,
+        src: "https://pbs.twimg.com/media/HM-F8S9WcAAMzOV?format=jpg&name=4096x4096",
+        alt: "valorant",
+    },
+    {
+        id: 2,
+        src: "https://pbs.twimg.com/media/HQFsNhsWEAAQGAR?format=jpg&name=4096x4096",
+        alt: "valorant",
+    },
+    {
+        id: 3,
         src: "https://pbs.twimg.com/media/HEb2OuQbsAAiiqo?format=jpg&name=medium",
         alt: "wallsova",
     },
     {
-        id: 2,
+        id: 4,
         src: "https://pbs.twimg.com/media/G3Dw_nnWYAAOjDY?format=jpg&name=medium",   
         alt: "sovaportrait",
     },
     {
-        id: 3,
+        id: 5,
         src: "https://pbs.twimg.com/media/FfWjrIwWYAATU4L?format=jpg&name=medium",   
         alt: "soviper",
     },
         {
-        id: 4,
+        id: 6,
         src: "https://pbs.twimg.com/media/GI9z6FTX0AMZgQP?format=jpg&name=medium",   
         alt: "sova",
     },
     {
-        id: 5,
+        id: 7,
         src: "https://pbs.twimg.com/media/GIK8wDCWEAEhmBY?format=jpg&name=medium",   
         alt: "sage",
     },
     {
-        id: 6,
+        id: 8,
         src: "https://pbs.twimg.com/media/GIRcSr_XgAAi3Tz?format=jpg&name=medium",   
         alt: "gekko",
     },

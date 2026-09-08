@@ -37,6 +37,11 @@ export const cosplaySova = [
     },  
     {
         id: 6,
+        src: "https://pbs.twimg.com/media/HRNZ3kvWYAEv2Yr?format=jpg&name=medium",
+        alt: "makeup sova",
+    },  
+    {
+        id: 7,
         src: "https://pbs.twimg.com/media/GjvrH9tWsAE_b8F?format=jpg&name=medium",
         alt: "san valentin sova",
     }, 

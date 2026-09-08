@@ -48,23 +48,28 @@ export const cosplayEru = [
         src: "https://pbs.twimg.com/media/G42r1roXEAARUHg?format=jpg&name=medium",   
         alt: "irenekuroi",
     },    
-    {
+       {
         id: 10,
-        src: "https://pbs.twimg.com/media/Gy9z1VtXcAAsOig?format=jpg&name=medium",   
+        src: "https://s1.pearlcdn.com/NAEU/Upload/Community/d573b772c8a20251212143005522.jpg",   
+        alt: "irenekuroi",
+    },   
+    {
+        id: 12,
+        src: "https://pbs.twimg.com/media/HNL6TrFXcAAeV7o?format=jpg&name=medium",   
         alt: "irenekuroi",
     }, 
     {
-        id: 11,
+        id: 13,
         src: "https://pbs.twimg.com/media/GmQF9dhW4AAnnCn?format=jpg&name=medium",   
         alt: "irenekuroi",
     },
     {
-        id: 12,
+        id: 14,
         src: "https://pbs.twimg.com/media/Gof_kngXwAAs5ub?format=jpg&name=medium",   
         alt: "irenekuroi",
     },
     {
-        id: 13,
+        id: 15,
         src: "https://pbs.twimg.com/media/GoqXSq4W0AE_T8F?format=jpg&name=medium",   
         alt: "irenekuroi",
     },
