@@ -5,6 +5,9 @@ export const dynamic = "force-static";
 
 const routes: { path: string; priority: number }[] = [
   { path: "/", priority: 1 },
+  { path: "/cosplay", priority: 0.8 },
+  { path: "/art", priority: 0.8 },
+  { path: "/virtual-photography", priority: 0.8 },
 
   // Cosplay
   { path: "/cosplay/akali", priority: 0.7 },

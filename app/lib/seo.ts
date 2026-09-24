@@ -9,7 +9,7 @@ export const SITE = {
   url: "https://viickyscarlet.pages.dev",
   locale: "es_ES",
   twitter: "@EUSonicOfHyrule",
-  defaultTitle: "Viicky Scarlet — Cosplay, arte digital y fotografía virtual",
+  defaultTitle: "Viicky Scarlet | Cosplay, arte digital, fotografía virtual y desarrollo web",
   description:
     "Portfolio de Viicky Scarlet: desarrolladora web, artista digital y cosplayer. Cosplay, dibujo digital, personajes originales (OC) y fotografía virtual en videojuegos como Black Desert y Where Winds Meet.",
   ogImage: "/home/hero_bdo_slide.webp",

@@ -48,7 +48,7 @@ const menuItems: MenuItem[] = [
   },
   {
     label: "Virtual Photography",
-    href: "/screenshots",
+    href: "/virtual-photography",
     submenu: [
       { label: "Black Desert", href: "/virtual-photography/black-desert", image: "/menu/photography/bdo.webp" },
       { label: "Where Winds Meet", href: "/virtual-photography/where-winds-meet", image: "/menu/photography/wwm.webp" },

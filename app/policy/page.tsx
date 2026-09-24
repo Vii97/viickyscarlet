@@ -90,23 +90,6 @@ export default function PrivacyPolicy() {
                   Son aquellas que sirven solo para el funcionamiento básico de la web, como recordar el consentimiento en el banner de cookies. Son cookies técnicas imprescindibles que no rastrearán tu comportamiento ni te vigilarán de ninguna forma.
                 </p>
                 <p className='text-white'>Este sitio web no usa cookies de terceros.</p>
-{/*}
-                <h3 className="text-white font-semibold mb-2 pt-2 flex items-center gap-2">
-                  Cookies de terceros
-                </h3>
-                <p className="text-white/70 mb-3">
-                  Para la visualización de las galerías de imágenes de la web pueden usarse cookies de terceros relacionados con el seguimiento y la personalización en sus respectivas plataformas.
-                </p>
-                  <p className="text-white/70">Este contenido multimedia está alojado en los servidores de:</p>
-                  <ul className="list-disc list-inside text-white/60 space-y-1">
-                    <li>X</li>
-                    <li>Black Desert</li>
-                  </ul>
-                  <p className="text-white/70 mt-3">
-                  </p>
-                <p className="text-white/70 mt-3">
-                  Para más información, recomiendo consultar sus respectivas políticas de privacidad.
-                </p>*/}
             </div>
         </section>
 
